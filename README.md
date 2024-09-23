@@ -9,9 +9,9 @@ O protótipo está no [Figma](https://www.figma.com/design/XwVQnNcbmC0xRJv4eOKuh
 ## Layout geral
 - `/`
 - `/sobre`
-- `/serviços`
-  - `/serviços/consultoria`
-  - `/serviços/proto`
-  - `/serviços/dev`
+- `/servicos`
+  - `/servicos/consultoria`
+  - `/servicos/proto`
+  - `/servicos/dev`
 - `/portfolio`
 - `/contato`
