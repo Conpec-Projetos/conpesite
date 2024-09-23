@@ -5,6 +5,7 @@ import LogoWhatsapp from '@/assets/LogoWhatsapp'
 import MailIcon from '@/assets/MailIcon'
 import LogoInstagram from '@/assets/LogoInstagram'
 import PinIcon from '@/assets/PinIcon'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -14,22 +15,22 @@ export default function Footer() {
         <h2>Contato</h2>
         <ul>
           <li>
-            <a target="_blank" href={`https://wa.me/${social.whatsappRaw}`}>
+            <Link target="_blank" href={`https://wa.me/${social.whatsappRaw}`}>
               <LogoWhatsapp aria-hidden="true" />
               {social.whatsapp}
-            </a>
+            </Link>
           </li>
           <li>
-            <a target="_blank" href={`mailto:${social.email}`}>
+            <Link target="_blank" href={`mailto:${social.email}`}>
               <MailIcon aria-hidden="true" />
               {social.email}
-            </a>
+            </Link>
           </li>
           <li>
-            <a target="_blank" href={`https://instagram.com/${social.instagram}`}>
+            <Link target="_blank" href={`https://instagram.com/${social.instagram}`}>
               <LogoInstagram aria-hidden="true" />
               {social.instagram}
-            </a>
+            </Link>
           </li>
         </ul>
       </address>
@@ -43,11 +44,11 @@ export default function Footer() {
       <nav>
         <h2>Páginas</h2>
         <ul>
-          <li><a href="/">Início</a></li>
-          <li><a href="/sobre">Sobre nós</a></li>
-          <li><a href="/servicos">Serviços</a></li>
-          <li><a href="/portfolio">Portfólio</a></li>
-          <li><a href="/contato">Fale conosco</a></li>
+          <li><Link href="/">Início</Link></li>
+          <li><Link href="/sobre">Sobre nós</Link></li>
+          <li><Link href="/servicos">Serviços</Link></li>
+          <li><Link href="/portfolio">Portfólio</Link></li>
+          <li><Link href="/contato">Fale conosco</Link></li>
         </ul>
       </nav>
       <small>© {new Date().getFullYear()} Conpec. Todos os direitos reservados.</small>
