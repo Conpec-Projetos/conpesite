@@ -1,6 +1,7 @@
 import { Poppins, Lato } from 'next/font/google'
 
 import './global.css'
+import Footer from '@/components/Footer'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="pt-BR" className={`${poppins.variable} ${lato.variable}`}>
       <body>
         {children}
+        <Footer />
       </body>
     </html>
   )
