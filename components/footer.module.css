@@ -34,7 +34,7 @@
   font-style: normal;
 }
 
-.footer ul {
+.footer ul, .footer menu {
   list-style: none;
   margin-top: 0;
   padding: 0;

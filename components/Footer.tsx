@@ -13,7 +13,7 @@ export default function Footer() {
       <LogoConpec className={styles.logoConpec} />
       <address className={styles.contato}>
         <h3>Contato</h3>
-        <ul>
+        <menu>
           <li>
             <Link target="_blank" href={`https://wa.me/${social.whatsappRaw}`}>
               <LogoWhatsapp aria-hidden="true" />
@@ -32,7 +32,7 @@ export default function Footer() {
               {social.instagram}
             </Link>
           </li>
-        </ul>
+        </menu>
       </address>
       <address className={styles.endereco}>
         <h3>Endereço</h3>
@@ -43,13 +43,13 @@ export default function Footer() {
       </address>
       <nav>
         <h3>Páginas</h3>
-        <ul>
+        <menu>
           <li><Link href="/">Início</Link></li>
           <li><Link href="/sobre">Sobre nós</Link></li>
           <li><Link href="/servicos">Serviços</Link></li>
           <li><Link href="/portfolio">Portfólio</Link></li>
           <li><Link href="/contato">Fale conosco</Link></li>
-        </ul>
+        </menu>
       </nav>
       <small>© {new Date().getFullYear()} Conpec. Todos os direitos reservados.</small>
     </footer>
