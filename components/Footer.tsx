@@ -16,19 +16,19 @@ export default function Footer() {
         <menu>
           <li>
             <Link target="_blank" href={`https://wa.me/${social.whatsappRaw}`}>
-              <LogoWhatsapp aria-hidden="true" />
+              <LogoWhatsapp aria-label="WhatsApp" />
               {social.whatsapp}
             </Link>
           </li>
           <li>
             <Link target="_blank" href={`mailto:${social.email}`}>
-              <MailIcon aria-hidden="true" />
+              <MailIcon aria-label="Email" />
               {social.email}
             </Link>
           </li>
           <li>
             <Link target="_blank" href={`https://instagram.com/${social.instagram}`}>
-              <LogoInstagram aria-hidden="true" />
+              <LogoInstagram aria-label="Instagram" />
               {social.instagram}
             </Link>
           </li>

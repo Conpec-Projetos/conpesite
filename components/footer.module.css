@@ -58,14 +58,14 @@
   color: var(--branco-0)
 }
 
-.footer svg[aria-hidden="true"] {
+.footer address svg {
   /* ícones SVG usados como ::marker */
   height: 1em;
   margin-right: 0.5em;
   vertical-align: middle;
 }
 
-.footer svg[aria-hidden="true"]:not([fill]) {
+.footer address svg:not([fill]) {
   fill: currentColor;
 }
 
