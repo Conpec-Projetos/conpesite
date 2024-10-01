@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <LogoConpec className={styles.logoConpec} />
       <address className={styles.contato}>
-        <h2>Contato</h2>
+        <h3>Contato</h3>
         <ul>
           <li>
             <Link target="_blank" href={`https://wa.me/${social.whatsappRaw}`}>
@@ -35,14 +35,14 @@ export default function Footer() {
         </ul>
       </address>
       <address className={styles.endereco}>
-        <h2>Endereço</h2>
+        <h3>Endereço</h3>
         <div>
           <PinIcon aria-hidden="true" />
           <p>{address}</p>
         </div>
       </address>
       <nav>
-        <h2>Páginas</h2>
+        <h3>Páginas</h3>
         <ul>
           <li><Link href="/">Início</Link></li>
           <li><Link href="/sobre">Sobre nós</Link></li>
