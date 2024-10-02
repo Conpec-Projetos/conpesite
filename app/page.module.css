@@ -6,6 +6,7 @@
 
 .sectHero {
   display: flex;
+  align-items: center;
   margin: 80px 40px;
 }
 
