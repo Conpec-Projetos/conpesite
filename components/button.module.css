@@ -5,7 +5,7 @@
   border-radius: 5px;
 
   font-family: var(--font-poppins);
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -70,7 +70,6 @@
 
 @media screen and (max-width: 500px) {
   .button {
-    font-size: 14px;
     padding: 0.55em 1em;
   }
 }

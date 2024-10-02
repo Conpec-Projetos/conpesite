@@ -9,6 +9,8 @@
   --laranja-conpec: #F66C0E;
   --laranja-1: #FFA161;
   --branco-0: #FCFCFC;
+
+  font-size: calc(15px + 0.4vw); /* todos os tamanhos de fontes serão baseados nesse */
 }
 
 body {
