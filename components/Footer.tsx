@@ -1,10 +1,10 @@
 import { social, address } from '@/constants'
 import styles from './footer.module.css'
-import LogoConpec from '@/assets/LogoConpec'
-import LogoWhatsapp from '@/assets/LogoWhatsapp'
-import MailIcon from '@/assets/MailIcon'
-import LogoInstagram from '@/assets/LogoInstagram'
-import PinIcon from '@/assets/PinIcon'
+import LogoConpec from './svg/LogoConpec'
+import LogoWhatsapp from './svg/LogoWhatsapp'
+import MailIcon from './svg/MailIcon'
+import LogoInstagram from './svg/LogoInstagram'
+import PinIcon from './svg/PinIcon'
 import Link from 'next/link'
 
 export default function Footer() {
