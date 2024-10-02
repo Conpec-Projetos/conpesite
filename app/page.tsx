@@ -2,10 +2,29 @@ import Image from 'next/image'
 import imagemEpej from '@/assets/epej.jpg'
 
 import style from './page.module.css'
+import Button from '@/components/Button'
+import ConpecIcon from '@/components/svg/ConpecIcon'
 
 export default function Home() {
   return (
     <main>
+      <section className={style.sectHero}>
+        <div>
+          <hgroup>
+            <small>A Empresa Júnior de Computação da Unicamp</small>
+            <h1>Tire suas ideias do papel com a <span>Conpec</span>.</h1>
+          </hgroup>
+          <p>
+            Com as melhorias tecnologias disponíveis no mercado, nós damos vida à sua ideia e
+            entregamos uma solução de sucesso para o seu negócio.
+          </p>
+          <div className={style.flexRow}>
+            <Button href="/contato" theme="fill">Entre em contato</Button>
+            <Button href="/portfolio" theme="outline">Ver projetos</Button>
+          </div>
+        </div>
+        <ConpecIcon aria-hidden="true" />
+      </section>
       <section className={style.sectSobre}>
         <Image
           src={imagemEpej}

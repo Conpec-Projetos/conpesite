@@ -1,3 +1,57 @@
+.sectHero *, .sectSobre * {
+  letter-spacing: -0.05em;
+  line-height: 100%;
+  margin: 0;
+}
+
+.sectHero {
+  display: flex;
+  margin: 80px 40px;
+}
+
+.sectHero small {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--cinza-2);
+}
+
+.sectHero > div > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sectHero h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  color: var(--preto-1);
+}
+
+.sectHero h1 span {
+  color: transparent;
+  background: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 50%);
+  background-clip: text;
+}
+
+.sectHero p {
+  color: var(--cinza-3);
+  font-size: 24px;
+  max-width: 45vw;
+}
+
+.sectHero svg {
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
+  min-width: 40vw;
+}
+
+.flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
+
+.flexRow > * {
+  flex-grow: 1;
+}
+
 .sectSobre {
   display: flex;
   align-items: center;
@@ -5,12 +59,6 @@
 
   margin-right: 64px;
   text-align: right;
-}
-
-.sectSobre * {
-  line-height: 100%;
-  letter-spacing: -0.05em;
-  margin: 0;
 }
 
 .sectSobre img {
@@ -54,6 +102,16 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .sectHero svg {
+    display: none;
+  }
+
+  .sectHero p {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .sectSobre {
     gap: 15px;
@@ -72,5 +130,27 @@
   .sectSobre h2 {
     font-size: 11vw;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sectHero {
+    margin: 20px 30px;
+  }
+
+  .sectHero h1 {
+    font-size: 48px;
+  }
+
+  .sectHero p {
+    font-size: 16px;
+  }
+
+  .sectHero small {
+    font-size: 12px;
+  }
+
+  .flexRow {
+    justify-content: space-between;
   }
 }
