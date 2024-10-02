@@ -26,7 +26,7 @@ type Props = LinkProps | ButtonProps
 // em `<button>`. Não tem como mesclar as propriedades dos dois.
 export default function Button(props: Props) {
   if (props.href === undefined) {
-    return <button className={styles[props.theme]} onClick={props.onClick}>{props.children}</button>
+    return <button className={`${styles.button} ${styles[props.theme]}`} onClick={props.onClick}>{props.children}</button>
   }
-  return <Link className={styles[props.theme]} href={props.href}>{props.children}</Link>
+  return <Link className={`${styles.button} ${styles[props.theme]}`} href={props.href}>{props.children}</Link>
 }

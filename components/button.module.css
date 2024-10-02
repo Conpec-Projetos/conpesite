@@ -1,4 +1,4 @@
-.fill, .outline, .tiny, .white {
+.button {
   display: block;
   position: relative;
   padding: 0.8em 1.5em;
