@@ -2,6 +2,7 @@
   letter-spacing: -0.05em;
   line-height: 100%;
   margin: 0;
+  text-wrap: balance;
 }
 
 .sectHero {
@@ -35,7 +36,6 @@
 .sectHero p {
   color: var(--cinza-3);
   font-size: 24px;
-  max-width: 45vw;
 }
 
 .sectHero svg {
@@ -79,7 +79,6 @@
 
 .sectSobre p {
   color: var(--cinza-1);
-  max-width: fit-content;
   font-size: 32px;
 }
 
@@ -102,10 +101,6 @@
 @media screen and (max-width: 900px) {
   .sectHero svg {
     display: none;
-  }
-
-  .sectHero p {
-    max-width: 100%;
   }
 }
 
