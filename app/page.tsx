@@ -7,7 +7,7 @@ import ConpecIcon from '@/components/svg/ConpecIcon'
 
 export default function Home() {
   return (
-    <main>
+    <main className={style.main}>
       <section className={style.sectHero}>
         <div>
           <hgroup>
