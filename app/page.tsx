@@ -4,6 +4,10 @@ import imagemEpej from '@/assets/epej.jpg'
 import style from './page.module.css'
 import Button from '@/components/Button'
 import ConpecIcon from '@/components/svg/ConpecIcon'
+import Link from 'next/link'
+import ConsultoriaIcon from '@/components/svg/ConsultoriaIcon'
+import ProtoIcon from '@/components/svg/ProtoIcon'
+import DevIcon from '@/components/svg/DevIcon'
 
 export default function Home() {
   return (
@@ -24,6 +28,80 @@ export default function Home() {
           </div>
         </div>
         <ConpecIcon aria-hidden="true" />
+      </section>
+      <section className={style.sectServicos}>
+        <hgroup>
+          <small>Os melhores serviços do mercado para você e seu negócio</small>
+          <h2>Temos Soluções.</h2>
+        </hgroup>
+        <menu>
+          <li>
+            <Link href="/servicos/consultoria">
+              <div className={style.iconeServico} aria-hidden="true">
+                <ConsultoriaIcon />
+              </div>
+              <div>
+                <h3>Consultoria</h3>
+                <p>
+                  Impulsionamos seu negócio com nossa consultoria personalizada. Transforme suas
+                  dificuldades em vantagens competitivas com as melhores tecnologias do mercado.
+                </p>
+              </div>
+              <div>
+                <h4>Ideal para negócios:</h4>
+                <ul>
+                  <li>Que buscam inovação</li>
+                  <li>Que querem otimização</li>
+                  <li>Que procuram resolver desafios</li>
+                </ul>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/servicos/proto">
+              <div className={style.iconeServico} aria-hidden="true">
+                <ProtoIcon />
+              </div>
+              <div>
+                <h3>Prototipação</h3>
+                <p>
+                  Transformamos sua ideia em realidade com nossos protótipos funcionais e atraentes.
+                  Valide conceitos de forma eficiente antes de partirmos para a implementação final.
+                </p>
+              </div>
+              <div>
+                <h4>Ideal para negócios:</h4>
+                <ul>
+                  <li>Em ideação inicial</li>
+                  <li>Que buscam transformação</li>
+                  <li>Em processo de validação</li>
+                </ul>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/servicos/dev">
+              <div className={style.iconeServico} aria-hidden="true">
+                <DevIcon />
+              </div>
+              <div>
+                <h3>Desenvolvimento</h3>
+                <p>
+                  Elevamos seu projeto com nossas soluções personalizadas com tecnologias de ponta.
+                  Ao fim, você terá um produto tecnicamente avançado, confiável e moderno.
+                </p>
+              </div>
+              <div>
+                <h4>Ideal para negócios:</h4>
+                <ul>
+                  <li>Com MVP</li>
+                  <li>Que buscam aprimoração</li>
+                  <li>Que querem expandir suas plataformas</li>
+                </ul>
+              </div>
+            </Link>
+          </li>
+        </menu>
       </section>
       <section className={style.sectSobre}>
         <Image
