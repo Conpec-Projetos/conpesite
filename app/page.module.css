@@ -48,10 +48,6 @@
   column-gap: 15px;
 }
 
-.flexRow > * {
-  flex-grow: 1;
-}
-
 .sectSobre {
   display: flex;
   align-items: center;
@@ -152,5 +148,9 @@
 
   .flexRow {
     justify-content: space-between;
+  }
+
+  .flexRow > * {
+    flex-grow: 1;
   }
 }
