@@ -119,6 +119,42 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <section className={style.sectDiferenciais}>
+        <div className ={style.divEsquerda}>
+          <h2>Dife<br/>ren<br/>ciais<br/></h2>
+          <p>O que oferecemos para entregar a<br/> melhor solução para o seu negócio?</p>
+        </div>
+        <div className={style.divQuatroCards}>
+          <div className={style.divCard}>
+            <h3>Somos flexíveis.</h3>
+            <p>
+              Ajudamos em todas as etapas do seu projeto, desde as ideias inicias até
+              o lançamento do seu produto.
+            </p>
+          </div>
+          <div className={style.divCard}>
+            <h3>Equipe qualificada.</h3>
+            <p>
+              Somos jovens profissionais que possuem experiência com as melhores e mais
+              modernas tecnologias do mercado.
+            </p>
+          </div>
+          <div className={style.divCard}>
+            <h3>Qualidade Unicamp.</h3>
+            <p>
+              Somos a Empresa Júnior do melhor curso de computação do país, e nossos
+              servicos possuem a melhor qualidade.
+            </p>
+          </div>
+          <div className={style.divCard}>
+            <h3>Proximidade.</h3>
+            <p>
+              Você acompanha de perto nosso projeto, ajudando a moldar o produto
+              de acordo com a sua ideia original.
+            </p>
+          </div>
+        </div>
+      </section> 
     </main>
   )
 }
