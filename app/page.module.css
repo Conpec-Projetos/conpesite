@@ -53,7 +53,7 @@
 
 .sectServicos {
   background: linear-gradient(to bottom, var(--laranja-1) -50%, var(--laranja-conpec) 150%);
-  padding: 60px 50px;
+  padding: 3rem 2.8rem;
 }
 
 .sectServicos hgroup {
@@ -219,7 +219,7 @@
   }
 
   .sectSobre div {
-    padding: 10% 0;
+    margin: 10% 0;
   }
 
   .sectHero svg {
@@ -264,12 +264,24 @@
     margin: 20px 30px;
   }
 
+  .sectHero small {
+    text-align: center;
+  }
+
+  .sectHero h1 {
+    font-size: 3rem;
+  }
+
   .flexRow {
     justify-content: space-between;
   }
 
   .flexRow > * {
     flex-grow: 1;
+  }
+
+  .sectServicos {
+    padding: 2rem 1rem;
   }
 
   .sectServicos hgroup h2 {
@@ -280,11 +292,19 @@
     margin-top: 1.5em;
   }
 
-  .sectSobre h2 {
-    font-size: 2.5rem;
+  .sectSobre {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    text-align: left;
   }
 
-  .sectSobre p {
-    font-size: 0.8rem;
+  .sectSobre img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .sectSobre div {
+    margin: 1em;
   }
 }
