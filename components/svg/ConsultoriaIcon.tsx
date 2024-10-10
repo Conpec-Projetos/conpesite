@@ -9,9 +9,9 @@ export default function ConsultoriaIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 42 40"
       fill="none"
       stroke="var(--laranja-conpec)"
-      stroke-width="4"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...props}
     >
       <path d="M4.31104 26.6666V6.66665C4.31104 5.78259 4.66484 4.93474 5.29463 4.30962C5.92441 3.6845 6.77859 3.33331 7.66924 3.33331H26.1393" />

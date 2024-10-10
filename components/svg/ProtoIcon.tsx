@@ -9,9 +9,9 @@ export default function ProtoIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 49 47"
       fill="none"
       stroke="var(--laranja-conpec)"
-      stroke-width="4"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...props}
     >
       <path d="M26.5755 13.6354L17.8656 5.25936C16.9508 4.38388 15.7127 3.8924 14.4221 3.8924C13.1316 3.8924 11.8935 4.38388 10.9787 5.25936L5.71222 10.3239C4.80185 11.2037 4.29077 12.3943 4.29077 13.6354C4.29077 14.8765 4.80185 16.0671 5.71222 16.9469L14.4221 25.3229" />
