@@ -1,0 +1,87 @@
+
+.containerDiv {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.mediaDiv {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    margin: 5%;
+}
+
+.imageDiv {
+    margin-right: 1%;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+/* 
+.images {
+    object-fit:fill;
+} */
+
+.textDiv {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-left: 1%;
+    justify-content: center;
+    
+}
+
+
+.right {
+    flex: 1;
+    margin-right: 0;  
+}
+
+.left {
+    flex: 0;
+}
+
+
+
+/* botar titles, text e subtitles dentro de divs e aí fazer o flex com eles */
+.titles {
+    /* flex: 1; */
+    font-size: clamp(2.9rem, 5.0vw, 5.63rem);
+    font-weight: bold;
+    margin: 0;
+    height: auto;
+    white-space: nowrap;
+}
+
+
+.text {
+    /* flex: 2; */
+    font-size: clamp(1.0rem, 1.45vw, 2.0rem);
+    font-weight: 400;
+    padding: 0% 1% 0% 0%;
+    margin: 0;
+    text-wrap: true;
+    text-align: justify;
+    max-width: 512px;
+    color: #676767;
+
+
+}
+
+@media (max-width: 500px) {
+    .text {
+        overflow: hidden;
+    }
+}
+
+.subtitle {
+    /* flex: 0; */
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #4B4B4B;
+}
