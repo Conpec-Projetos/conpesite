@@ -4,7 +4,22 @@ import logosClientes from '/app/assets/Logos.png'
 import logoImunolab from '/app/assets/Imunolab.png'
 import mockups from '/app/assets/Mockups.png'
 
+
 export default function Portfolio() {
+  const bannerLogos = [
+    '/app/assets/Agility_Brasil.png',
+    '/app/assets/Banespa.png',
+    '/app/assets/CookWorking.png',
+    '/app/assets/Destinos_Inteligentes.png',
+    '/app/assets/Feec.png',
+    '/app/assets/Griaule.png',
+    '/app/assets/Inova.png',
+    '/app/assets/Nano_Cell.png',
+    '/app/assets/P&G.png',
+    '/app/assets/Social_Mentes.png',
+    '/app/assets/Taikon.png'
+  ]
+
   return (
     <>
       
@@ -145,8 +160,17 @@ export default function Portfolio() {
           </div>
       </div>
 
-      <div>
-        Negocio rodando
+      <div className={styles.banner}>
+        <div className={styles.logoContainer}>
+          {bannerLogos.map((logo, index) => (
+            <Image key={index} src={logo} alt={'Logo'} className={styles.logo} width={50} height={25} />
+          ))}
+        </div>
+        <div className={styles.logoContainer}>
+          {bannerLogos.map((logo, index) => (
+            <Image key={index} src={logo} alt={'Logo'} className={styles.logo} width={50} height={25} />
+          ))}
+        </div>
       </div>
       
       

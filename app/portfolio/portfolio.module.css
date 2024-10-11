@@ -112,5 +112,33 @@
     padding: 5px;
 }
 
+.banner {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    
+}
+  
+.logoContainer {
+    display: flex;
+    animation: 15s slide infinite linear;
+}
+  
+.logo {
+    height: 50px;
 
+    margin: 0 50px;
+}
+  
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+  
 
