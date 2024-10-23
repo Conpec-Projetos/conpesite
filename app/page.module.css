@@ -187,10 +187,15 @@
   align-items: center;
 }
 
+.pLowWidth {
+  display: none;
+}
+
 .divEsquerda {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 70px;
   width: 35vw;
   gap: 15px;
 }
@@ -199,13 +204,11 @@
   color: var(--laranja-conpec);
   font-size: 7rem;
   text-transform: uppercase;
-  margin-left: 70px;
   line-height: 5rem;
 }
 
 .divEsquerda p {
   color: var(--preto-2);
-  margin-left: 70px;
   font-size: 1.5rem;
   letter-spacing: -0.72px;
 }
@@ -216,8 +219,8 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(200px, 1fr));
   padding: 65px;
   gap: 15px;
   margin-top: -20px;
@@ -264,6 +267,18 @@
   .sectSobre p {
     font-size: 1.3rem;
   }
+
+  .sectDiferenciais h2{
+    font-size: 6rem;
+  }
+
+  .sectDiferenciais h3{
+    font-size: 1.5rem
+  }
+
+  .sectDiferenciais p{
+    font-size: 1.3rem
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -275,13 +290,16 @@
     margin-bottom: 0.5em;
     font-size: 1.2rem;
   }
+
+  .divQuatroCards {
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 10% 100%);
+  }
 }
 
 @media screen and (max-width: 900px) {
   .sectSobre h2 {
     font-size: 4rem;
   }
-
 
   .sectSobre img {
     width: 40vw;
@@ -310,13 +328,75 @@
     margin-bottom: 1em;
   }
 
+
+  .sectDiferenciais {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .sectDiferenciais br {
+    display: none;
+  }
+
+  .pLowWidth {
+    display: inline;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .pHighWidth {
+    display: none;
+  }
+
+  .divEsquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    width: auto;
+    gap: 10px;
+  }
+
+  .divEsquerda h2 {
+    color: var(--laranja-conpec);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+  }
+  
+  .divEsquerda p {
+    color: var(--preto-2);
+    font-size: 1.5rem;
+    letter-spacing: -0.72px;
+  }
+  
+  .divQuatroCards {
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+    padding: 30px;
+    gap: 15px;
+    margin-top: 0px;
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: var(--laranja-conpec);
+  }
+  
+  .divCard {
+    gap: 10px;
+  }
+}
+
   .iconeServico {
     top: calc(-3rem / 1.8);
     left: calc(50% - (3rem / 2));
     width: 3rem;
     height: 3rem;
   }
-}
 
 @media screen and (max-width: 700px) {
   .sectSobre h2 {
@@ -325,6 +405,22 @@
 
   .sectSobre p {
     font-size: 1.2rem;
+  }
+
+  .sectDiferenciais h2 {
+    font-size: 3.5rem;
+  }
+
+  .sectDiferenciais h3 {
+    font-size: 1.5rem;
+  }
+
+  .sectDiferenciais p {
+    font-size: 1.1rem;
+  }
+
+  .divCard {
+    padding: 20px;
   }
 }
 

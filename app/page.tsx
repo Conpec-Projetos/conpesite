@@ -121,8 +121,9 @@ export default function Home() {
       </section>
       <section className={style.sectDiferenciais}>
         <div className ={style.divEsquerda}>
+          <p className ={style.pLowWidth}>Conheça nossos</p>
           <h2>Dife<br/>ren<br/>ciais<br/></h2>
-          <p>O que oferecemos para entregar a<br/> melhor solução para o seu negócio?</p>
+          <p className ={style.pHighWidth}>O que oferecemos para entregar a<br/> melhor solução para o seu negócio?</p>
         </div>
         <div className={style.divQuatroCards}>
           <div className={style.divCard}>
@@ -143,7 +144,7 @@ export default function Home() {
             <h3>Qualidade Unicamp.</h3>
             <p>
               Somos a Empresa Júnior do melhor curso de computação do país, e nossos
-              servicos possuem a melhor qualidade.
+              serviços possuem a melhor qualidade.
             </p>
           </div>
           <div className={style.divCard}>
