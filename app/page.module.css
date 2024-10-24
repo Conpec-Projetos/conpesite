@@ -268,15 +268,15 @@
     font-size: 1.3rem;
   }
 
-  .sectDiferenciais h2{
+  .sectDiferenciais h2 {
     font-size: 6rem;
   }
 
-  .sectDiferenciais h3{
+  .sectDiferenciais h3 {
     font-size: 1.5rem
   }
 
-  .sectDiferenciais p{
+  .sectDiferenciais p {
     font-size: 1.3rem
   }
 }
@@ -364,13 +364,13 @@
     text-transform: uppercase;
     line-height: 3.5rem;
   }
-  
+
   .divEsquerda p {
     color: var(--preto-2);
     font-size: 1.5rem;
     letter-spacing: -0.72px;
   }
-  
+
   .divQuatroCards {
     display: grid;
     position: relative;
@@ -385,18 +385,18 @@
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
     background-color: var(--laranja-conpec);
   }
-  
+
   .divCard {
     gap: 10px;
   }
 }
 
-  .iconeServico {
-    top: calc(-3rem / 1.8);
-    left: calc(50% - (3rem / 2));
-    width: 3rem;
-    height: 3rem;
-  }
+.iconeServico {
+  top: calc(-3rem / 1.8);
+  left: calc(50% - (3rem / 2));
+  width: 3rem;
+  height: 3rem;
+}
 
 @media screen and (max-width: 700px) {
   .sectSobre h2 {

@@ -120,10 +120,10 @@ export default function Home() {
         </div>
       </section>
       <section className={style.sectDiferenciais}>
-        <div className ={style.divEsquerda}>
-          <p className ={style.pLowWidth}>Conheça nossos</p>
-          <h2>Dife<br/>ren<br/>ciais<br/></h2>
-          <p className ={style.pHighWidth}>O que oferecemos para entregar a<br/> melhor solução para o seu negócio?</p>
+        <div className={style.divEsquerda}>
+          <p className={style.pLowWidth}>Conheça nossos</p>
+          <h2>Dife<br />ren<br />ciais<br /></h2>
+          <p className={style.pHighWidth}>O que oferecemos para entregar a<br /> melhor solução para o seu negócio?</p>
         </div>
         <div className={style.divQuatroCards}>
           <div className={style.divCard}>
@@ -155,7 +155,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section> 
+      </section>
     </main>
   )
 }
