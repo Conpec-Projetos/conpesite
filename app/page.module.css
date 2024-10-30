@@ -198,11 +198,13 @@
   margin-left: 70px;
   width: 35vw;
   gap: 15px;
+  font-size: 7rem;
+  max-width: 5ch; /* no máximo cinco caracteres do título */
 }
 
 .sectDiferenciais hgroup h2 {
   color: var(--laranja-conpec);
-  font-size: 7rem;
+  font-size: inherit;
   text-transform: uppercase;
   line-height: 0.8;
 }
