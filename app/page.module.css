@@ -238,6 +238,15 @@
   gap: 15px;
   border-radius: 5px;
   border: 2px solid var(--branco-4);
+  transition: all 0.2s linear;
+}
+
+.quatroCards > *:hover {
+  background: white;
+}
+
+.quatroCards > *:hover * {
+  color: var(--laranja-conpec);
 }
 
 .quatroCards > * h3 {
