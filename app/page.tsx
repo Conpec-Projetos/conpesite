@@ -120,11 +120,11 @@ export default function Home() {
         </div>
       </section>
       <section className={style.sectDiferenciais}>
-        <div className={style.divEsquerda}>
+        <hgroup>
           <p className={style.pLowWidth}>Conheça nossos</p>
           <h2>Dife<br />ren<br />ciais<br /></h2>
           <p className={style.pHighWidth}>O que oferecemos para entregar a<br /> melhor solução para o seu negócio?</p>
-        </div>
+        </hgroup>
         <div className={style.divQuatroCards}>
           <div className={style.divCard}>
             <h3>Somos flexíveis.</h3>

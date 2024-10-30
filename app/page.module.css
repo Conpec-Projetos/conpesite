@@ -191,7 +191,7 @@
   display: none;
 }
 
-.divEsquerda {
+.sectDiferenciais hgroup {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,14 +200,14 @@
   gap: 15px;
 }
 
-.divEsquerda h2 {
+.sectDiferenciais hgroup h2 {
   color: var(--laranja-conpec);
   font-size: 7rem;
   text-transform: uppercase;
   line-height: 5rem;
 }
 
-.divEsquerda p {
+.sectDiferenciais hgroup p {
   color: var(--preto-2);
   font-size: 1.5rem;
   letter-spacing: -0.72px;
@@ -348,7 +348,7 @@
     display: none;
   }
 
-  .divEsquerda {
+  .sectDiferenciais hgroup {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,14 +358,14 @@
     gap: 10px;
   }
 
-  .divEsquerda h2 {
+  .sectDiferenciais hgroup h2 {
     color: var(--laranja-conpec);
     font-size: 4.5rem;
     text-transform: uppercase;
     line-height: 3.5rem;
   }
 
-  .divEsquerda p {
+  .sectDiferenciais hgroup p {
     color: var(--preto-2);
     font-size: 1.5rem;
     letter-spacing: -0.72px;
