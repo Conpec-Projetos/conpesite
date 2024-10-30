@@ -192,17 +192,16 @@
 }
 
 .sectDiferenciais hgroup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-left: 70px;
-  width: 35vw;
-  gap: 15px;
   font-size: 7rem;
   max-width: 5ch; /* no máximo cinco caracteres do título */
 }
 
-.sectDiferenciais hgroup h2 {
+.sectDiferenciais hgroup > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.sectDiferenciais h2 {
   color: var(--laranja-conpec);
   font-size: inherit;
   text-transform: uppercase;
@@ -212,15 +211,12 @@
 .sectDiferenciais hgroup p {
   color: var(--preto-2);
   font-size: 1.5rem;
-  letter-spacing: -0.72px;
 }
 
 .quatroCards {
   display: grid;
-  position: relative;
   align-items: center;
   justify-content: center;
-  flex: 1;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   grid-template-rows: repeat(2, minmax(200px, 1fr));
   padding: 65px;
@@ -232,6 +228,7 @@
 
 .quatroCards > * {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   padding: 40px 20px;
   height: 100%;
@@ -251,17 +248,13 @@
 
 .quatroCards > * h3 {
   color: var(--branco-1);
-  align-self: stretch;
   font-size: 1.75rem;
   font-weight: 600;
-  letter-spacing: -0.9px;
 }
 
 .quatroCards > * p {
   color: var(--branco-3);
-  align-self: stretch;
-  font-size: 1.5em;
-  letter-spacing: -0.72px;
+  font-size: 1.5rem;
 }
 
 
@@ -284,11 +277,11 @@
   }
 
   .sectDiferenciais h3 {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 
   .sectDiferenciais p {
-    font-size: 1.3rem
+    font-size: 1.3rem;
   }
 }
 
@@ -303,7 +296,8 @@
   }
 
   .quatroCards {
-    clip-path: polygon(0% 0, 100% 0, 100% 100%, 10% 100%);
+    /* aumentar ângulo esquerdo para compensar tela menor */
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 7% 100%);
   }
 }
 
@@ -345,12 +339,8 @@
     margin-top: 10px;
   }
 
-  .sectDiferenciais br {
-    display: none;
-  }
-
   .pLowWidth {
-    display: inline;
+    display: block;
     text-transform: uppercase;
     text-align: center;
   }
@@ -360,42 +350,24 @@
   }
 
   .sectDiferenciais hgroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-left: 0px;
     margin-bottom: 10px;
-    width: auto;
-    gap: 10px;
     max-width: fit-content;
   }
 
-  .sectDiferenciais hgroup h2 {
-    color: var(--laranja-conpec);
+  .sectDiferenciais h2 {
     font-size: 4.5rem;
-    text-transform: uppercase;
-    line-height: 3.5rem;
+    text-align: center;
   }
 
   .sectDiferenciais hgroup p {
-    color: var(--preto-2);
     font-size: 1.5rem;
-    letter-spacing: -0.72px;
   }
 
   .quatroCards {
-    display: grid;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, minmax(200px, 1fr));
     padding: 30px;
-    gap: 15px;
     margin-top: 0px;
-    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
-    background-color: var(--laranja-conpec);
+    clip-path: none;
   }
 
   .quatroCards > * {
@@ -417,10 +389,6 @@
 
   .sectSobre p {
     font-size: 1.2rem;
-  }
-
-  .sectDiferenciais h2 {
-    font-size: 3.5rem;
   }
 
   .sectDiferenciais h3 {
@@ -483,5 +451,15 @@
 
   .sectSobre div {
     margin: 1em;
+  }
+
+  .sectDiferenciais h2 {
+    font-size: 3rem;
+  }
+
+  .quatroCards {
+    padding: 1em;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
   }
 }
