@@ -215,7 +215,7 @@
   letter-spacing: -0.72px;
 }
 
-.divQuatroCards {
+.quatroCards {
   display: grid;
   position: relative;
   align-items: center;
@@ -230,7 +230,7 @@
   background-color: var(--laranja-conpec);
 }
 
-.divCard {
+.quatroCards > * {
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
@@ -240,7 +240,7 @@
   border: 2px solid var(--branco-4);
 }
 
-.divCard h3 {
+.quatroCards > * h3 {
   color: var(--branco-1);
   align-self: stretch;
   font-size: 1.75rem;
@@ -248,7 +248,7 @@
   letter-spacing: -0.9px;
 }
 
-.divCard p {
+.quatroCards > * p {
   color: var(--branco-3);
   align-self: stretch;
   font-size: 1.5em;
@@ -293,7 +293,7 @@
     font-size: 1.2rem;
   }
 
-  .divQuatroCards {
+  .quatroCards {
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 10% 100%);
   }
 }
@@ -373,7 +373,7 @@
     letter-spacing: -0.72px;
   }
 
-  .divQuatroCards {
+  .quatroCards {
     display: grid;
     position: relative;
     align-items: center;
@@ -388,7 +388,7 @@
     background-color: var(--laranja-conpec);
   }
 
-  .divCard {
+  .quatroCards > * {
     gap: 10px;
   }
 }
@@ -421,7 +421,7 @@
     font-size: 1.1rem;
   }
 
-  .divCard {
+  .quatroCards > * {
     padding: 20px;
   }
 }
