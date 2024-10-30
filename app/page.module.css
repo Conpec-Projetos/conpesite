@@ -204,7 +204,7 @@
   color: var(--laranja-conpec);
   font-size: 7rem;
   text-transform: uppercase;
-  line-height: 5rem;
+  line-height: 0.8;
 }
 
 .sectDiferenciais hgroup p {
