@@ -261,7 +261,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px 65px 60px 25px;
+  margin: 60px;
 }
 
 .relatos {
@@ -270,7 +270,7 @@
 }
 
 .relatos > * {
-  padding: 1.7em 3em;
+  padding: 1em 2em calc(1em + 40px); /* descontar espaço usado pelas aspas */
   border: 2px solid var(--cinza-4);
   box-shadow: 10px 10px 0px 0px var(--laranja-0);
 }
@@ -296,8 +296,7 @@
 .sectRelatos .cta {
   text-transform: uppercase;
   text-align: right;
-  font-size: 3.5rem;
-  min-width: 11ch;
+  min-width: calc(3.5 * 11ch);
 }
 
 .sectRelatos .cta hgroup > * {
@@ -313,7 +312,7 @@
 
 .sectRelatos .cta h2 {
   color: var(--preto-1);
-  font-size: inherit;
+  font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -1.92px;
 }
@@ -351,6 +350,10 @@
 
   .sectDiferenciais p {
     font-size: 1.3rem;
+  }
+
+  .relatos {
+    flex-direction: column;
   }
 }
 
@@ -448,6 +451,32 @@
     left: calc(50% - (3rem / 2));
     width: 3rem;
     height: 3rem;
+  }
+
+  .sectRelatos {
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .relatos svg { /* ícone de aspas */
+    display: none;
+  }
+
+  .relatos > * {
+    padding: 1em 2em;
+  }
+
+  .relatos h2 {
+    margin-top: 0;
+  }
+
+  .sectRelatos .cta {
+    order: -1;
+    text-align: center;
+  }
+
+  .sectRelatos .cta a {
+    display: none;
   }
 }
 
