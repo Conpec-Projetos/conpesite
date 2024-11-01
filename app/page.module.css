@@ -442,13 +442,13 @@
   .quatroCards > * {
     gap: 10px;
   }
-}
 
-.iconeServico {
-  top: calc(-3rem / 1.8);
-  left: calc(50% - (3rem / 2));
-  width: 3rem;
-  height: 3rem;
+  .iconeServico {
+    top: calc(-3rem / 1.8);
+    left: calc(50% - (3rem / 2));
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
