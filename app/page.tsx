@@ -8,7 +8,7 @@ import Link from 'next/link'
 import ConsultoriaIcon from '@/components/svg/ConsultoriaIcon'
 import ProtoIcon from '@/components/svg/ProtoIcon'
 import DevIcon from '@/components/svg/DevIcon'
-import Aspas from '@/components/svg/Aspas'
+import Relato from '@/components/Relato'
 
 export default function Home() {
   return (
@@ -159,22 +159,14 @@ export default function Home() {
       </section>
       <section className={style.sectRelatos}>
         <div className={style.relatos}>
-          <div>
-            <Aspas aria-hidden="true" />
-            <blockquote>
-              Cotamos um trabalho para desenvolvimento de aplicativo e a Conpec foi a que apresentou a melhor proposta e cumpriu com a melhor solução.
-              O aplicativo em si vem dando os resultado que a gente esperava e muito mais.
-            </blockquote>
-            <cite>Murilo Martins, Finança Médica</cite>
-          </div>
-          <div>
-            <Aspas aria-hidden="true" />
-            <blockquote>
-              Minha experiência com o trabalho da Conpec foi excelente, não posso descrever de outra forma. Acredito que a Conpec não só disponibilizou as
-              melhores pessoas para atender o desafio que tínhamos na Cargill, mas convocou uma equipe transparente e eficiente no que se dispunha a entregar.
-            </blockquote>
-            <cite>Matheus Gomes, representante da Cargill</cite>
-          </div>
+          <Relato cite="Murilo Martins, Finança Médica">
+            Cotamos um trabalho para desenvolvimento de aplicativo e a Conpec foi a que apresentou a melhor proposta e cumpriu com a melhor solução.
+            O aplicativo em si vem dando os resultado que a gente esperava e muito mais.
+          </Relato>
+          <Relato cite="Matheus Gomes, representante da Cargill">
+            Minha experiência com o trabalho da Conpec foi excelente, não posso descrever de outra forma. Acredito que a Conpec não só disponibilizou as
+            melhores pessoas para atender o desafio que tínhamos na Cargill, mas convocou uma equipe transparente e eficiente no que se dispunha a entregar.
+          </Relato>
         </div>
         <div className={style.cta}>
           <hgroup>

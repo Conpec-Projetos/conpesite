@@ -269,30 +269,6 @@
   gap: 45px;
 }
 
-.relatos > * {
-  padding: 1em 2em calc(1em + 40px); /* descontar espaço usado pelas aspas */
-  border: 2px solid var(--cinza-4);
-  box-shadow: 10px 10px 0px 0px var(--laranja-0);
-}
-
-.relatos svg { /* sinal de aspas */
-  transform: translateX(-50%);
-}
-
-.relatos blockquote {
-  color: var(--cinza-7);
-  font-family: var(--font-dm-serif);
-  font-style: italic;
-  letter-spacing: 0;
-  margin: 10px 0 15px;
-}
-
-.relatos cite {
-  color: var(--cinza-5);
-  font-size: 0.9rem;
-  font-style: normal;
-}
-
 .sectRelatos .cta {
   text-transform: uppercase;
   text-align: right;
@@ -456,18 +432,6 @@
   .sectRelatos {
     flex-direction: column;
     margin: 30px;
-  }
-
-  .relatos svg { /* ícone de aspas */
-    display: none;
-  }
-
-  .relatos > * {
-    padding: 1em 2em;
-  }
-
-  .relatos h2 {
-    margin-top: 0;
   }
 
   .sectRelatos .cta {
