@@ -162,10 +162,8 @@ export default function Home() {
           <div>
             <Aspas aria-hidden="true" />
             <blockquote>
-              Cotamos um trabalho para desenvolvimento do aplicativo e a Conpec foi a que apresentou a melhor proposta e cumpriu com a melhor solução.
-              O aplicativo em si vem dando os resultado que a gente esperava e muito mais. Além de todo a dedicação da equipe em trabalhar conosco, seja
-              realizando as atividades, seja nos dando atenções e orientações, para que a gente consiga desenvolver o nosso trabalho por aqui. Então,
-              eu queria agradecer muito o profissionalismo e dedicação da Conpec.
+              Cotamos um trabalho para desenvolvimento de aplicativo e a Conpec foi a que apresentou a melhor proposta e cumpriu com a melhor solução.
+              O aplicativo em si vem dando os resultado que a gente esperava e muito mais.
             </blockquote>
             <cite>Murilo Martins, Finança Médica</cite>
           </div>
@@ -174,8 +172,6 @@ export default function Home() {
             <blockquote>
               Minha experiência com o trabalho da Conpec foi excelente, não posso descrever de outra forma. Acredito que a Conpec não só disponibilizou as
               melhores pessoas para atender o desafio que tínhamos na Cargill, mas convocou uma equipe transparente e eficiente no que se dispunha a entregar.
-              Realmente acredito que trabalhos como esse exaltam o potencial de entrega que o MEJ tem como um todo e, pelo meu lado, foi um prazer muito grande
-              ter participado desse projeto com o time da Conpec que, sem sombra de dúvidas, entregou muito valor para a gente.
             </blockquote>
             <cite>Matheus Gomes, representante da Cargill</cite>
           </div>
