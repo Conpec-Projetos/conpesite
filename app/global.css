@@ -27,13 +27,21 @@
   box-sizing: border-box;
 }
 
-body {
+* {
   margin: 0;
-  background-color: var(--branco-0);
-  font-family: var(--font-lato);
 }
 
+body {
+  background-color: var(--branco-0);
+  font-family: var(--font-lato);
+  line-height: calc(1em + 0.5rem);
+}
+
+li {
+  line-height: 1.2;
+}
 
 h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
   font-family: var(--font-poppins);
 }
