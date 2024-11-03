@@ -1,0 +1,75 @@
+.button {
+  display: block;
+  position: relative;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-wrap: nowrap;
+  text-align: center;
+
+  background-color: white;
+  border: none;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  align-content: center; /* útil para quando o elemento inflar por algum motivo (como flexbox) */
+
+  transition: all 0.3s ease;
+}
+
+.fill {
+  color: var(--branco-0);
+  background-image: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 50%);
+  background-size: 200% 100%;
+}
+
+/* infelizmente, a maioria dos navegadores não suporta transição CSS:
+   https://caniuse.com/mdn-css_properties_transition_gradients_can_animate
+
+   Por isso, fazemos um background maior que o esperado (via `background-size`, com o gradiente nos
+   primeiros 50% do background), e então movemos ele pra direita. */
+.fill:hover {
+  background-position: 100%;
+}
+
+.tiny {
+  padding: 10px;
+  color: var(--branco-0);
+  background-image: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 33%, var(--laranja-2) 67%);
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+
+/* mesma coisa do .fill acima. */
+.tiny:hover {
+  background-position: 0%;
+}
+
+.outline {
+  color: var(--laranja-conpec);
+  border: var(--laranja-conpec) 2px solid;
+}
+
+.white {
+  color: var(--preto-0);
+}
+
+.outline:hover, .white:hover {
+  color: var(--branco-0);
+  background-color: var(--laranja-1);
+}
+
+.outline:hover {
+  /* se eu remover a borda, o tamanho do botão também diminui. aqui, deixamos ela transparente. */
+  border-color: transparent;
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    padding: 0.55em 1em;
+  }
+}

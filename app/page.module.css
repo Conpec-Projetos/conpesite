@@ -1,0 +1,527 @@
+.main * {
+  letter-spacing: -0.05em;
+  line-height: 100%;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.sectHero {
+  display: flex;
+  align-items: center;
+  margin: 80px 40px;
+}
+
+.sectHero small {
+  display: block;
+  margin-bottom: min(0.8rem, 10px);
+
+  text-transform: uppercase;
+  color: var(--cinza-2);
+}
+
+.sectHero > div > *:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.sectHero h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: var(--preto-1);
+}
+
+.sectHero h1 span {
+  color: transparent;
+  background: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 50%);
+  background-clip: text;
+}
+
+.sectHero p {
+  color: var(--cinza-3);
+  font-size: 1.2rem;
+}
+
+.sectHero svg {
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.15));
+  min-width: 40vw;
+}
+
+.flexRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 1em;
+}
+
+.sectServicos {
+  background: linear-gradient(to bottom, var(--laranja-1) -50%, var(--laranja-conpec) 150%);
+  padding: 3rem 2.8rem;
+}
+
+.sectServicos hgroup {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--branco-1);
+}
+
+.sectServicos hgroup h2 {
+  font-size: 4.5rem;
+  margin: 0.2em 0;
+}
+
+.sectServicos hgroup small {
+  display: block;
+}
+
+.sectServicos > menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.sectServicos > menu > li {
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.sectServicos > menu > li > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 70px 35px 50px;
+
+  border-radius: 10px;
+  border: 2.5px solid var(--branco-2);
+  background-color: white;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.sectServicos a h3 {
+  color: var(--laranja-conpec);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.sectServicos a h4 {
+  color: var(--laranja-conpec);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+
+.sectServicos a p {
+  min-height: 8em;
+}
+
+.sectServicos a ul {
+  list-style-type: disc;
+  padding-left: 1em;
+}
+
+.iconeServico {
+  position: absolute;
+  top: calc(-85px / 1.8);
+  left: calc(50% - (85px / 2));
+  width: 85px;
+  height: 85px;
+
+  background-color: white;
+  border: var(--branco-2) 2.5px solid;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.iconeServico svg {
+  width: 55%;
+}
+
+.sectServicos > menu > li:hover {
+  transform: scale(1.05);
+}
+
+.sectSobre {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  margin-right: 64px;
+  text-align: right;
+}
+
+.sectSobre img {
+  width: 45vw;
+  height: auto;
+  object-fit: cover;
+  align-self: stretch;
+  z-index: -1;
+}
+
+.sectSobre h2 {
+  color: var(--cinza-0);
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+.sectSobre h2 span {
+  color: var(--laranja-conpec);
+}
+
+.sectSobre p {
+  color: var(--cinza-1);
+  font-size: 1.5rem;
+}
+
+.sectDiferenciais {
+  display: flex;
+  align-items: center;
+}
+
+.pLowWidth {
+  display: none;
+}
+
+.sectDiferenciais hgroup {
+  margin-left: 70px;
+  font-size: 7rem;
+  max-width: 5ch; /* no máximo cinco caracteres do título */
+}
+
+.sectDiferenciais hgroup > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.sectDiferenciais h2 {
+  color: var(--laranja-conpec);
+  font-size: inherit;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.sectDiferenciais hgroup p {
+  color: var(--preto-2);
+  font-size: 1.5rem;
+}
+
+.quatroCards {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(200px, 1fr));
+  padding: 65px;
+  gap: 15px;
+  margin-top: -20px;
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 3% 100%);
+  background-color: var(--laranja-conpec);
+}
+
+.quatroCards > * {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  height: 100%;
+  gap: 15px;
+  border-radius: 5px;
+  border: 2px solid var(--branco-4);
+  transition: all 0.2s linear;
+}
+
+.quatroCards > *:hover {
+  background: white;
+}
+
+.quatroCards > *:hover * {
+  color: var(--laranja-conpec);
+}
+
+.quatroCards > * h3 {
+  color: var(--branco-1);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.quatroCards > * p {
+  color: var(--branco-3);
+  font-size: 1.5rem;
+}
+
+.sectRelatos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px;
+}
+
+.relatos {
+  display: flex;
+  gap: 45px;
+}
+
+.sectRelatos .cta {
+  text-transform: uppercase;
+  text-align: right;
+  min-width: calc(3.5 * 11ch);
+}
+
+.sectRelatos .cta hgroup > * {
+  margin-bottom: 15px;
+}
+
+.sectRelatos .cta p {
+  color: var(--cinza-6);
+  font-weight: 500;
+  letter-spacing: -0.48px;
+  font-size: 0.9rem;
+}
+
+.sectRelatos .cta h2 {
+  color: var(--preto-1);
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -1.92px;
+}
+
+.sectRelatos .cta h2 span {
+  color: var(--laranja-conpec);
+}
+
+.sectRelatos .cta a {
+  width: fit-content;
+  float: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectSobre {
+    gap: 3.5vw;
+    margin-right: 5vw;
+  }
+
+  .sectSobre h2 {
+    font-size: 5rem;
+  }
+
+  .sectSobre p {
+    font-size: 1.3rem;
+  }
+
+  .sectDiferenciais h2 {
+    font-size: 6rem;
+  }
+
+  .sectDiferenciais h3 {
+    font-size: 1.5rem;
+  }
+
+  .sectDiferenciais p {
+    font-size: 1.3rem;
+  }
+
+  .relatos {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .sectServicos > menu > li > a {
+    padding: 40px 20px;
+  }
+
+  .sectServicos a h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.2rem;
+  }
+
+  .quatroCards {
+    /* aumentar ângulo esquerdo para compensar tela menor */
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 7% 100%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sectSobre h2 {
+    font-size: 4rem;
+  }
+
+  .sectSobre img {
+    width: 40vw;
+  }
+
+  .sectSobre div {
+    margin: 10% 0;
+  }
+
+  .sectHero svg {
+    display: none;
+  }
+
+  .sectServicos > menu {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .sectServicos > menu > li {
+    margin-top: 1.5rem;
+    max-width: 500px;
+  }
+
+  .sectServicos a p {
+    min-height: fit-content;
+    margin-bottom: 1em;
+  }
+
+
+  .sectDiferenciais {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .pLowWidth {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .pHighWidth {
+    display: none;
+  }
+
+  .sectDiferenciais hgroup {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+  }
+
+  .sectDiferenciais h2 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+
+  .sectDiferenciais hgroup p {
+    font-size: 1.5rem;
+  }
+
+  .quatroCards {
+    padding: 30px;
+    margin-top: 0px;
+    clip-path: none;
+  }
+
+  .quatroCards > * {
+    gap: 10px;
+  }
+
+  .iconeServico {
+    top: calc(-3rem / 1.8);
+    left: calc(50% - (3rem / 2));
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .sectRelatos {
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .sectRelatos .cta {
+    order: -1;
+    text-align: center;
+  }
+
+  .sectRelatos .cta a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sectSobre h2 {
+    font-size: 3rem;
+  }
+
+  .sectSobre p {
+    font-size: 1.2rem;
+  }
+
+  .sectDiferenciais h3 {
+    font-size: 1.5rem;
+  }
+
+  .sectDiferenciais p {
+    font-size: 1.1rem;
+  }
+
+  .quatroCards > * {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sectHero {
+    margin: 20px 30px;
+  }
+
+  .sectHero small {
+    text-align: center;
+  }
+
+  .sectHero h1 {
+    font-size: 3rem;
+  }
+
+  .flexRow {
+    justify-content: space-between;
+  }
+
+  .flexRow > * {
+    flex-grow: 1;
+  }
+
+  .sectServicos {
+    padding: 2rem 1rem;
+  }
+
+  .sectServicos hgroup h2 {
+    font-size: 2.5rem;
+  }
+
+  .sectServicos > menu {
+    margin-top: 1.5em;
+  }
+
+  .sectSobre {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .sectSobre img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .sectSobre div {
+    margin: 1em;
+  }
+
+  .sectDiferenciais h2 {
+    font-size: 3rem;
+  }
+
+  .quatroCards {
+    padding: 1em;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
