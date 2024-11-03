@@ -1,0 +1,80 @@
+/* SECT HERO */
+
+.sectHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  margin-bottom: 50px;
+}
+
+.sectHero > div {
+  margin-left: 3em;
+}
+
+.sectHero h1 {
+  text-transform: uppercase;
+  color: var(--preto-1);
+  font-size: 4.5em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sectHero h1 span {
+  color: transparent;
+  background: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 100%);
+  background-clip: text;
+}
+
+.sectHero p {
+  color: var(--cinza-3);
+  line-height: 1;
+  font-size: 1.2em;
+  max-width: 100%;
+  text-wrap: balance;
+}
+
+.sectHero img {
+  height: auto;
+  width: 45vw;
+  box-shadow: 15px 15px 0px 0px var(--laranja-conpec);
+  transform: translateY(10%);
+}
+
+@media screen and (max-width: 1000px) {
+  .sectHero {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sectHero {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .sectHero {
+    flex-direction: column;
+    gap: 0;
+    font-size: 0.9rem;
+  }
+
+  .sectHero > div {
+    margin: 20px;
+  }
+
+  .sectHero img {
+    width: calc(100vw - 15px);
+    transform: none;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sectHero {
+    font-size: 0.7rem;
+  }
+}
