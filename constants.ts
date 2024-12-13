@@ -91,3 +91,31 @@ export const coorde = [
     imagem: imgGustavo,
   },
 ]
+
+export const timeline = [
+  {
+    data: '1991',
+    titulo: 'Fundação',
+    detalhes: 'É formada <strong>uma das primeiras empresas júnior de computação do Brasil</strong>, por alunos da Unicamp. A Conpec surge com o objetivo de trazer um olhar mais empreendedor para os cursos de computação da universidade.',
+  },
+  {
+    data: '2000',
+    titulo: 'Projeto Boldrini',
+    detalhes: 'A Conpec inicia uma parceria com o Centro Infantil Boldrini, especializado no tratamento de crianças com câncer, para desenvolver gratuitamente uma plataforma de gerenciamento do hospital. O projeto recebeu a premiação de <strong>Melhor Projeto Social da FEJESP</strong>, em 2000.',
+  },
+  {
+    data: '2001',
+    titulo: 'Melhor Projeto Comercial',
+    detalhes: 'A Conpec desenvolve o projeto DocStock: um software para gerenciar o controle de estoque, visando otimizar o espaço destinado ao armazenamento, recebendo o prêmio de <strong>Melhor Projeto Comercial da FEJESP</strong> em 2001.',
+  },
+  {
+    data: '2020',
+    titulo: 'Olá, Mundos!',
+    detalhes: 'A Conpec cria o <i>Olá, Mundos!</i>, um projeto que fornece <strong>aulas gratuitas de computação em escolas públicas de Campinas</strong>. O Olá, Mundos! democratiza o acesso à educação e forma alunos mais capacitados para o mercado de trabalho num mundo digital. ',
+  },
+  {
+    data: '2024',
+    titulo: 'EJ de alto crescimento',
+    detalhes: 'A Conpec <strong>bate as metas de alto crescimento do Movimento Brasil Júnior</strong>, a entidade nacional que supervisiona as empresas júnior do país.',
+  },
+]

@@ -304,9 +304,150 @@
   }
 }
 
+/* SECT TIMELINE */
+
+.sectTimeline {
+  --horizontal-pad: 4rem;
+
+  background-color: var(--laranja-conpec);
+  padding: 2rem var(--horizontal-pad);
+  color: white;
+}
+
+.sectTimeline h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 0.9;
+  margin: 0 2em 1em;
+}
+
+.sectTimeline ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -50vh; /* tamanho do tlOverlay */
+
+  --inner-gap: 4rem;
+}
+
+.sectTimeline li {
+  width: calc(50vw - var(--horizontal-pad) - var(--inner-gap));
+}
+
+.sectTimeline li:not(:first-child) {
+  margin-top: -1.5em;
+}
+
+.sectTimeline li:nth-child(even) {
+  text-align: right;
+  align-self: end;
+}
+
+.sectTimeline hgroup > * {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.sectTimeline time {
+  font-weight: 800;
+}
+
+.sectTimeline h3 {
+  font-weight: 500;
+}
+
+.sectTimeline small {
+  display: block;
+  text-wrap: balance;
+}
+
+.timeline {
+  position: absolute;
+  top: 3.2rem; /* tamanho do primeiro hgroup */
+  bottom: -2rem;
+  left: calc(50% - 2px);
+
+  width: 4px;
+  background-color: white;
+}
+
+.tlConn {
+  position: relative;
+  margin: 0.2em 0 0.6em;
+  border-top: solid 1px white;
+}
+
+.sectTimeline li:nth-child(odd) .tlConn {
+  margin-right: calc(-1 * var(--inner-gap));
+}
+
+.sectTimeline li:nth-child(even) .tlConn {
+  margin-left: calc(-1 * var(--inner-gap));
+}
+
+.tlBola {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+
+  position: absolute;
+  top: -10px;
+}
+
+.sectTimeline li:nth-child(odd) .tlBola {
+  right: -10px;
+}
+
+.sectTimeline li:nth-child(even) .tlBola {
+  left: -10px;
+}
+
+.tlOverlay {
+  position: sticky;
+  top: 50vh;
+  height: 50vh;
+  z-index: 2;
+  background: linear-gradient(180deg, transparent 0%, var(--laranja-conpec) 100%);
+  margin-bottom: -50vh; /* continuar descendo após acabar a section */
+}
+
+@media screen and (max-width: 800px) {
+  .sectTimeline h2 {
+    margin: 0 0 1em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sectTimeline {
+    --horizontal-pad: 1rem;
+
+  }
+
+  .sectTimeline ol {
+    --inner-gap: 2rem;
+  }
+
+  .sectTimeline li {
+    font-size: 0.9rem;
+  }
+
+  .sectTimeline small {
+    font-size: 0.7em;
+  }
+}
+
 /* SECT COORDE */
 
 .sectCoorde {
+  /* evitar que o overlay da timeline apareça no bg */
+  position: relative;
+  z-index: 3;
+  background-color: var(--branco-1);
+
   padding: 1em 2em;
 }
 
