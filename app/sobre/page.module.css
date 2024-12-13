@@ -386,4 +386,8 @@
   .sectCoorde ul {
     gap: 0.5em;
   }
+
+  .sectCoorde li {
+    font-size: 0.5em;
+  }
 }
