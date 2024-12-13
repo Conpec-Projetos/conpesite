@@ -303,3 +303,87 @@
     height: 200px;
   }
 }
+
+/* SECT COORDE */
+
+.sectCoorde {
+  padding: 1em 2em;
+}
+
+.sectCoorde h2 {
+  color: var(--preto-1);
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 0.9;
+  margin-bottom: 1em;
+}
+
+.sectCoorde h2 span {
+  font-weight: 700;
+}
+
+.sectCoorde ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+
+  list-style: none;
+  padding: 0;
+}
+
+.sectCoorde li {
+  --el-width: calc(80vw / 4);
+  width: var(--el-width);
+}
+
+.sectCoorde li img {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: var(--el-width);
+}
+
+.sectCoorde li * {
+  text-align: center;
+}
+
+.sectCoorde li h3 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.sectCoorde li p {
+  font-size: 1.2em;
+  text-wrap: balance;
+}
+
+@media screen and (max-width: 1000px) {
+  .sectCoorde li {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sectCoorde {
+    padding: 1em;
+  }
+
+  .sectCoorde h2 {
+    font-size: 2rem;
+  }
+
+  .sectCoorde li {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sectCoorde h2 {
+    font-size: 1.5rem;
+  }
+
+  .sectCoorde ul {
+    gap: 0.5em;
+  }
+}

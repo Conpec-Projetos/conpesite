@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ImagemAlvorada from '@/assets/alvorada.jpg'
 
 import style from './page.module.css'
-import { mvv } from '@/constants'
+import { mvv, coorde } from '@/constants'
 
 function renderValor(valor: typeof mvv.valores[number], id: number): JSX.Element {
   return (
@@ -11,6 +11,18 @@ function renderValor(valor: typeof mvv.valores[number], id: number): JSX.Element
       <div>
         <h3>{valor.titulo}</h3>
         <p>{valor.descricao}</p>
+      </div>
+    </li>
+  )
+}
+
+function renderCoorde(membro: typeof coorde[number], id: number): JSX.Element {
+  return (
+    <li key={id}>
+      <Image src={membro.imagem} alt="" />
+      <div>
+        <h3>{membro.nome}</h3>
+        <p>{membro.cargo}</p>
       </div>
     </li>
   )
@@ -43,6 +55,12 @@ export default function Sobre() {
         <ul className={style.sectValores}>
           <div><h2>Temos <span>valores</span>.</h2></div>
           {mvv.valores.map((valor, i) => renderValor(valor, i))}
+        </ul>
+      </section>
+      <section className={style.sectCoorde}>
+        <h2>Nossos líderes, junto com a <span>equipe Conpec</span>, estão comprometidos em tirar o seu projeto do papel.</h2>
+        <ul>
+          {coorde.map((membro, i) => renderCoorde(membro, i))}
         </ul>
       </section>
     </main>
