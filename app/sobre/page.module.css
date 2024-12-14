@@ -1,0 +1,534 @@
+/* SECT HERO */
+
+.sectHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+
+  margin-bottom: 50px;
+}
+
+.sectHero > div {
+  margin-left: 3em;
+}
+
+.sectHero h1 {
+  text-transform: uppercase;
+  color: var(--preto-1);
+  font-size: 4.5em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sectHero h1 span {
+  color: transparent;
+  background: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 100%);
+  background-clip: text;
+}
+
+.sectHero p {
+  color: var(--cinza-3);
+  line-height: 1;
+  font-size: 1.2em;
+  max-width: 100%;
+  text-wrap: balance;
+}
+
+.sectHero img {
+  height: auto;
+  width: 45vw;
+  box-shadow: 15px 15px 0px 0px var(--laranja-conpec);
+  transform: translateY(10%);
+}
+
+@media screen and (max-width: 1000px) {
+  .sectHero {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sectHero {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .sectHero {
+    flex-direction: column;
+    gap: 0;
+    font-size: 0.9rem;
+  }
+
+  .sectHero > div {
+    margin: 20px;
+  }
+
+  .sectHero img {
+    width: calc(100vw - 15px);
+    transform: none;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sectHero {
+    font-size: 0.7rem;
+  }
+}
+
+/* SECT MVV */
+
+.sectMVV {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sectMVV > * {
+  padding: 7em 4em;
+}
+
+.sectMVV h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sectMVV p {
+  font-size: 1.2rem;
+}
+
+.sectMVV > *:first-child {
+  color: var(--branco-4);
+  background: linear-gradient(133deg, var(--laranja-1) -80%, var(--laranja-conpec) 200%);
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%); /* setinha */
+}
+
+@media screen and (max-width: 1280px) {
+  .sectMVV h2 {
+    font-size: 2.5rem;
+  }
+
+  .sectMVV > * {
+    padding: 5em 3em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sectMVV h2 {
+    font-size: 2.2rem;
+  }
+
+  .sectMVV > * {
+    padding: 3em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sectMVV {
+    display: block;
+  }
+
+  .sectMVV h2 {
+    font-size: 3.5rem;
+  }
+
+  .sectMVV p {
+    max-width: 90%; /* evitar que o texto saia da "setinha" */
+  }
+
+  .sectMVV > * {
+    padding: 1em;
+  }
+
+  .sectMVV > *:first-child {
+    background: var(--laranja-conpec);
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sectMVV h2 {
+    font-size: 3rem;
+  }
+}
+
+/* SECT VALORES */
+
+/* lembrando que .sectValores é aplicado no <ul> */
+.sectValores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 450px);
+  gap: 1em;
+
+  padding: 2em;
+  list-style: none;
+}
+
+.sectValores > div { /* h2 wrapper */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectValores h2 {
+  height: min-content;
+  width: min-content;
+
+  color: var(--preto-1);
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sectValores h2 span {
+  font-weight: 700;
+}
+
+.sectValores li {
+  background: var(--laranja-conpec);
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px 0px #00000010;
+}
+
+.sectValores img {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+}
+
+.sectValores li div {
+  margin: 2em 1.5em 0;
+}
+
+.sectValores li h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-bottom: 0.3em;
+}
+
+.sectValores li p {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 1050px) {
+  .sectValores h2 {
+    font-size: 2.5rem;
+  }
+
+  .sectValores li h3 {
+    font-size: 1.2em;
+  }
+
+  .sectValores li p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sectValores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sectValores h2 {
+    font-size: 3rem;
+  }
+
+  .sectValores li h3 {
+    font-size: 1.4em;
+  }
+
+  .sectValores li p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sectValores {
+    padding: 1em;
+    gap: 1.5em;
+    grid-template-rows: auto repeat(3, 1fr);
+    align-items: stretch;
+  }
+
+  .sectValores > div {
+    display: block;
+    grid-column-start: span 2;
+  }
+
+  .sectValores h2 {
+    width: auto;
+    color: inherit;
+  }
+
+  .sectValores img {
+    height: 300px;
+  }
+
+  .sectValores li div {
+    margin: 1em;
+    font-size: 0.8rem;
+  }
+
+  /* se ficar um valor sozinho embaixo, deixar ele ocupar duas colunas */
+  .sectValores li:last-child:nth-child(even) {
+    grid-column-start: span 2;
+    max-width: calc(50vw - 2.25em);
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .sectValores {
+    display: block;
+  }
+
+  .sectValores > * {
+    margin-bottom: 1.5em;
+  }
+
+  .sectValores li:last-child:nth-child(even) {
+    max-width: inherit;
+  }
+
+  .sectValores img {
+    height: 200px;
+  }
+}
+
+/* SECT TIMELINE */
+
+.sectTimeline {
+  --horizontal-pad: 4rem;
+
+  background-color: var(--laranja-conpec);
+  padding: 2rem var(--horizontal-pad);
+  color: white;
+}
+
+.sectTimeline h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 0.9;
+  margin: 0 2em 1em;
+}
+
+.sectTimeline ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -50vh; /* tamanho do tlOverlay */
+
+  --inner-gap: 4rem;
+}
+
+.sectTimeline li {
+  width: calc(50vw - var(--horizontal-pad) - var(--inner-gap));
+}
+
+.sectTimeline li:not(:first-child) {
+  margin-top: -1.5em;
+}
+
+.sectTimeline li:nth-child(even) {
+  text-align: right;
+  align-self: end;
+}
+
+.sectTimeline hgroup > * {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.sectTimeline time {
+  font-weight: 800;
+}
+
+.sectTimeline h3 {
+  font-weight: 500;
+}
+
+.sectTimeline small {
+  display: block;
+  text-wrap: balance;
+}
+
+.timeline {
+  position: absolute;
+  top: 3.2rem; /* tamanho do primeiro hgroup */
+  bottom: -2rem;
+  left: calc(50% - 2px);
+
+  width: 4px;
+  background-color: white;
+}
+
+.tlConn {
+  position: relative;
+  margin: 0.2em 0 0.6em;
+  border-top: solid 1px white;
+}
+
+.sectTimeline li:nth-child(odd) .tlConn {
+  margin-right: calc(-1 * var(--inner-gap));
+}
+
+.sectTimeline li:nth-child(even) .tlConn {
+  margin-left: calc(-1 * var(--inner-gap));
+}
+
+.tlBola {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+
+  position: absolute;
+  top: -10px;
+}
+
+.sectTimeline li:nth-child(odd) .tlBola {
+  right: -10px;
+}
+
+.sectTimeline li:nth-child(even) .tlBola {
+  left: -10px;
+}
+
+.tlOverlay {
+  position: sticky;
+  top: 50vh;
+  height: 50vh;
+  z-index: 2;
+  background: linear-gradient(180deg, transparent 0%, var(--laranja-conpec) 100%);
+  margin-bottom: -50vh; /* continuar descendo após acabar a section */
+}
+
+@media screen and (max-width: 800px) {
+  .sectTimeline h2 {
+    margin: 0 0 1em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sectTimeline {
+    --horizontal-pad: 1rem;
+
+  }
+
+  .sectTimeline ol {
+    --inner-gap: 2rem;
+  }
+
+  .sectTimeline li {
+    font-size: 0.9rem;
+  }
+
+  .sectTimeline small {
+    font-size: 0.7em;
+  }
+}
+
+/* SECT COORDE */
+
+.sectCoorde {
+  /* evitar que o overlay da timeline apareça no bg */
+  position: relative;
+  z-index: 3;
+  background-color: var(--branco-1);
+
+  padding: 1em 2em;
+}
+
+.sectCoorde h2 {
+  color: var(--preto-1);
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 0.9;
+  margin-bottom: 1em;
+}
+
+.sectCoorde h2 span {
+  font-weight: 700;
+}
+
+.sectCoorde ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+
+  list-style: none;
+  padding: 0;
+}
+
+.sectCoorde li {
+  --el-width: calc(80vw / 4);
+  width: var(--el-width);
+}
+
+.sectCoorde li img {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: var(--el-width);
+}
+
+.sectCoorde li * {
+  text-align: center;
+}
+
+.sectCoorde li h3 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.sectCoorde li p {
+  font-size: 1.2em;
+  text-wrap: balance;
+}
+
+@media screen and (max-width: 1000px) {
+  .sectCoorde li {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sectCoorde {
+    padding: 1em;
+  }
+
+  .sectCoorde h2 {
+    font-size: 2rem;
+  }
+
+  .sectCoorde li {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sectCoorde h2 {
+    font-size: 1.5rem;
+  }
+
+  .sectCoorde ul {
+    gap: 0.5em;
+  }
+
+  .sectCoorde li {
+    font-size: 0.5em;
+  }
+}
