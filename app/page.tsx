@@ -20,7 +20,7 @@ export default function Home() {
             <h1>Tire suas ideias do papel com a <span>Conpec</span>.</h1>
           </hgroup>
           <p>
-            Com as melhorias tecnologias disponíveis no mercado, nós damos vida à sua ideia e
+            Com as melhores tecnologias disponíveis no mercado, nós damos vida à sua ideia e
             entregamos uma solução de sucesso para o seu negócio.
           </p>
           <div className={style.flexRow}>
