@@ -1,0 +1,58 @@
+.sectHero {
+  position: relative;
+  color: white;
+  padding: 5rem 10vw 5rem 60vw;
+}
+
+.sectHero .blackBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background: black;
+}
+
+.sectHero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+  object-fit: cover;
+
+  mask-image: linear-gradient(90deg, black, transparent 80%);
+}
+
+.sectHero h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.sectHero p {
+  margin-bottom: 1.5rem;
+}
+
+.sectHero a {
+  width: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+  .sectHero {
+    padding-left: 50vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sectHero {
+    padding: 4rem 2rem;
+  }
+
+  .sectHero img {
+    mask-image: linear-gradient(90deg, #00000050, transparent 100%);
+  }
+}
