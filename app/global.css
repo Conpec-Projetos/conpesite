@@ -34,7 +34,7 @@
 body {
   background-color: var(--branco-0);
   font-family: var(--font-lato);
-  line-height: calc(1em + 0.5rem);
+  line-height: 1;
 }
 
 li {

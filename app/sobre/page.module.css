@@ -18,7 +18,6 @@
   color: var(--preto-1);
   font-size: 4.5em;
   font-weight: 700;
-  line-height: 1;
 }
 
 .sectHero h1 span {
@@ -29,7 +28,6 @@
 
 .sectHero p {
   color: var(--cinza-3);
-  line-height: 1;
   font-size: 1.2em;
   max-width: 100%;
   text-wrap: balance;
@@ -93,7 +91,6 @@
 .sectMVV h2 {
   text-transform: uppercase;
   font-size: 3rem;
-  line-height: 1;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -182,7 +179,6 @@
 
   color: var(--preto-1);
   font-size: 3rem;
-  line-height: 1;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -348,7 +344,6 @@
 
 .sectTimeline hgroup > * {
   font-size: 1.5em;
-  line-height: 1;
 }
 
 .sectTimeline time {
