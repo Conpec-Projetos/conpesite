@@ -139,6 +139,7 @@
   background-color: var(--laranja-conpec);
   border-radius: 10px;
   padding: 1em;
+  margin-bottom: 1.5em;
   width: 0;
 
   flex: 1 1 0;
@@ -214,5 +215,143 @@
 
   .listaServicos {
     margin: 1em 0.5em;
+  }
+}
+
+.sectProcesso {
+  position: relative;
+  height: calc(50vw - 2rem);
+
+  margin: 3em;
+  padding: 2em;
+
+  border-radius: 5px;
+  background: linear-gradient(290deg, var(--laranja-1) 0%, var(--laranja-conpec) 30%, var(--laranja-conpec) 70%, var(--laranja-1) 100%);
+  box-shadow: 0px 4px 6px 0px #00000010;
+  color: white;
+}
+
+.sectProcesso h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  max-width: 50%;
+}
+
+.sectProcesso ol {
+  list-style-position: inside;
+  text-align: center;
+}
+
+.sectProcesso h3 {
+  display: inline;
+
+  text-transform: uppercase;
+  font-size: 1.3em;
+  line-height: 0.9;
+  margin-bottom: 0.3em;
+}
+
+.sectProcesso li p {
+  font-size: 0.9em;
+  text-wrap: balance;
+}
+
+.sectProcesso li {
+  position: absolute;
+  width: 23%;
+}
+
+.sectProcesso li::marker {
+  font-weight: 700;
+  text-decoration:
+}
+
+.sectProcesso li:nth-child(1) {
+  top: 40%;
+}
+
+.sectProcesso li:nth-child(2) {
+  top: 74%;
+  left: 36%;
+}
+
+.sectProcesso li:nth-child(3) {
+  top: 13%;
+  left: 49%;
+}
+
+.sectProcesso li:nth-child(4) {
+  top: 50%;
+  left: 68%;
+}
+
+.sectProcesso svg {
+  position: absolute;
+  width: 74%;
+  top: 5%;
+  left: 15%;
+
+  pointer-events: none; /* allow clicking behind svg */
+}
+
+@media screen and (max-width: 1100px) {
+  .sectProcesso {
+    font-size: 0.9rem;
+    height: 50vw;
+  }
+
+  .sectProcesso li {
+    width: 25%;
+  }
+
+  .sectProcesso svg {
+    top: 8%;
+    left: 16%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sectProcesso {
+    font-size: 0.8rem;
+    margin: 1.5em;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sectProcesso {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    height: fit-content;
+    font-size: 1rem;
+  }
+
+  .sectProcesso h2 {
+    max-width: 100%;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .sectProcesso svg {
+    display: none;
+  }
+
+  .sectProcesso ol {
+    margin-top: 2em;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectProcesso li {
+    position: static;
+    width: 200px;
+    flex-grow: 1;
   }
 }
