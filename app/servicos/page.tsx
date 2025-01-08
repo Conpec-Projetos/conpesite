@@ -8,6 +8,7 @@ import StarIcon from '@/components/svg/StarIcon'
 import ConsultoriaIcon from '@/components/svg/ConsultoriaIcon'
 import ProtoIcon from '@/components/svg/ProtoIcon'
 import DevIcon from '@/components/svg/DevIcon'
+import Form from '@/components/Form'
 
 export default function Servicos() {
   return (
@@ -122,6 +123,7 @@ export default function Servicos() {
         </ol>
         {svgProcessoCriacao()}
       </section>
+      <Form />
     </main>
   )
 }
