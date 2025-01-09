@@ -1,0 +1,155 @@
+/* CSS das páginas específicas para cada serviço */
+
+.sectHero {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  display: flex;
+
+  height: 40vw;
+  z-index: -1; /* permitir imagem da seção abaixo por cima da seção */
+}
+
+.sectHero img {
+  height: 100%;
+  max-width: 60vw;
+  min-width: 0;
+  object-fit: cover;
+  object-position: right;
+
+  z-index: 1;
+}
+
+.sectHero div + img {
+  object-position: left;
+}
+
+.sectHero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.7em;
+  height: 100%;
+  margin-left: 2.5em;
+  margin-right: 1em;
+}
+
+.sectHero img + div {
+  margin-left: 1em;
+}
+
+.sectHero div * {
+  z-index: 2;
+}
+
+.sectHero h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.sectHero p {
+  text-wrap: balance;
+}
+
+.sectHero a {
+  width: fit-content;
+}
+
+@media screen and (max-width: 1100px) {
+  .sectHero img {
+    /* width: 50vw; */
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .sectHero div {
+    margin-left: 1em;
+  }
+
+  .sectHero h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sectHero {
+    height: 200px;
+    font-size: 0.9em;
+  }
+
+  .sectHero div + img {
+    margin-left: -15%;
+  }
+}
+
+.sectDesc {
+  display: flex;
+  align-items: stretch;
+}
+
+.sectDesc img {
+  z-index: 3;
+  margin-top: -5%;
+  width: 55vw;
+  height: auto;
+  object-fit: cover;
+  object-position: left;
+}
+
+.sectDesc div {
+  align-self: center;
+
+  margin: 0 2em;
+  font-size: 1.15em;
+}
+
+.sectDesc div > * {
+  margin: 0.5em 0;
+}
+
+.sectDesc em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+@media screen and (max-width: 900px) {
+  .sectDesc img {
+    width: 100%;
+  }
+
+  .sectDesc div {
+    margin-left: 1em;
+    margin-right: 2em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sectDesc div {
+    font-size: 0.9em;
+  }
+
+  .sectDesc div a {
+    font-size: 0.9em;
+  }
+
+  .sectDesc img {
+    margin-top: -2%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sectDesc div a {
+    display: none;
+  }
+
+  .sectDesc img {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sectDesc div {
+    font-size: 0.8em;
+  }
+}
