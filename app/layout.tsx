@@ -2,6 +2,7 @@ import { Poppins, Lato, DM_Serif_Text } from 'next/font/google'
 
 import './global.css'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pt-BR" className={`${poppins.variable} ${lato.variable} ${dm_serif.variable}`}>
       <body>
+        <Header />
         {children}
         <Footer />
       </body>
