@@ -54,7 +54,7 @@ export default function Sobre() {
             desde 1991 entregando os melhores projetos para nossos clientes.
           </p>
         </div>
-        <Image src={ImagemAlvorada} alt="Membros da Conpec posam para foto no evento regional Alvorada." />
+        <Image src={ImagemAlvorada} alt="Membros da Conpec posam para foto no evento regional Alvorada." priority />
       </section>
       <section className={style.sectMVV}>
         <div>

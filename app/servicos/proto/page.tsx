@@ -9,7 +9,7 @@ export default function Proto() {
   return (
     <main>
       <section className={style.sectHero}>
-        <Image src={stockImage} alt="" />
+        <Image src={stockImage} alt="" priority />
         <div>
           <h1>Prototipação</h1>
           <p>Faça a sua ideia ganhar forma!</p>

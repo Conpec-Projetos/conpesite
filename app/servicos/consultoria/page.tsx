@@ -14,7 +14,7 @@ export default function Consultoria() {
           <p>Descubra as melhores tecnologias para o seu negócio!</p>
           <Button href="#form" theme="fill">Entre em contato</Button>
         </div>
-        <Image src={stockImage} alt="Homem visualiza um gráfico na tela de um computador." />
+        <Image src={stockImage} alt="Homem visualiza um gráfico na tela de um computador." priority />
       </section>
       <section className={style.sectDesc}>
         <Image src={resultImage} alt="Dois homens, usando a camisa da Conpec, discutem em frente à um computador." />
