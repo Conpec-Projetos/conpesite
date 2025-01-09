@@ -408,6 +408,7 @@
   z-index: 2;
   background: linear-gradient(180deg, transparent 0%, var(--laranja-conpec) 100%);
   margin-bottom: -50vh; /* continuar descendo após acabar a section */
+  pointer-events: none;
 }
 
 @media screen and (max-width: 800px) {
