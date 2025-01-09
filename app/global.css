@@ -35,6 +35,8 @@ body {
   background-color: var(--branco-0);
   font-family: var(--font-lato);
   line-height: 1;
+
+  padding-top: 70px; /* account for header */
 }
 
 li {

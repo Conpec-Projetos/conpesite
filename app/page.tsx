@@ -28,7 +28,7 @@ export default function Home() {
             <Button href="/portfolio" theme="outline">Ver projetos</Button>
           </div>
         </div>
-        <ConpecIcon aria-hidden="true" />
+        <ConpecIcon hasMask aria-hidden="true" />
       </section>
       <section className={style.sectServicos}>
         <hgroup>

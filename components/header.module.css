@@ -1,0 +1,124 @@
+.header, .header > div, .header nav, .navDrawer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.header {
+  justify-content: space-between;
+
+  height: 70px;
+  padding: 15px;
+
+  box-shadow: 0px 0px 6px 0px #00000010;
+  background-color: white;
+
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header > a {
+  flex-shrink: 2;
+}
+
+.header > a > svg {
+  height: 30px;
+  min-width: 0;
+
+  /* contar visualmente pela perna do "p" */
+  margin-top: 5%;
+}
+
+.icon {
+  display: none;
+}
+
+.header > div {
+  height: 100%;
+}
+
+.navDrawer a {
+  color: black;
+  text-decoration: none;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.navDrawer a.active {
+  color: var(--laranja-conpec);
+}
+
+.navDrawer a:hover {
+  color: var(--laranja-conpec);
+}
+
+.header input {
+  display: none;
+}
+
+.header label {
+  cursor: pointer;
+  display: none;
+  width: 40px;
+  color: var(--laranja-conpec);
+}
+
+.header label svg {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .navDrawer {
+    position: absolute;
+    top: 70px;
+    right: -100vw;
+
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px #00000010;
+
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+    transition: all 0.2s ease-out;
+
+    font-size: 1.2em;
+  }
+
+  input:checked + .navDrawer {
+    right: 0;
+  }
+
+  .header label {
+    display: block;
+  }
+
+  .header input:not(:checked) ~ label svg.hamburguer {
+    display: block;
+  }
+
+  .header input:checked ~ label svg.close {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header nav > a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .wordmark {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+  }
+}
