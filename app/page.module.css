@@ -527,4 +527,8 @@
   .sectRelatos .cta h2 {
     font-size: 2.5rem;
   }
+
+  .sectRelatos .cta {
+    min-width: unset;
+  }
 }
