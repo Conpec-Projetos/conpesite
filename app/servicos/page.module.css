@@ -1,0 +1,357 @@
+.sectHero {
+  position: relative;
+  color: white;
+  padding: 5rem 10vw 5rem 60vw;
+}
+
+.sectHero .blackBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background: black;
+}
+
+.sectHero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+  object-fit: cover;
+
+  mask-image: linear-gradient(90deg, black, transparent 80%);
+}
+
+.sectHero h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.sectHero p {
+  margin-bottom: 1.5rem;
+}
+
+.sectHero a {
+  width: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+  .sectHero {
+    padding-left: 50vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sectHero {
+    padding: 4rem 2rem;
+  }
+
+  .sectHero img {
+    mask-image: linear-gradient(90deg, #00000050, transparent 100%);
+  }
+}
+
+.sectPassos {
+  margin: 2rem 4rem;
+}
+
+.sectPassos h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 5%;
+}
+
+.sectPassos ol {
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.listaPassos {
+  margin: 2rem 0;
+  position: relative;
+  align-items: center;
+
+  text-transform: uppercase;
+  font-family: var(--font-poppins);
+  font-weight: bold;
+  color: var(--laranja-conpec);
+}
+
+.listaPassos li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  flex: 1 1 0;
+  width: 0;
+}
+
+.listaPassos li:not(.passoComplementar) .icon {
+  width: 5em;
+  height: 5em;
+  border-radius: 100%;
+  padding: 0.8em;
+
+  background-color: white;
+  color: var(--laranja-conpec);
+  border: solid 4px var(--laranja-conpec);
+}
+
+.listaPassos li.passoComplementar .icon {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  padding: 0.5em;
+
+  background-color: var(--laranja-conpec);
+  color: white;
+}
+
+.hlinePassos {
+  position: absolute;
+  top: calc(50% + 15px);
+  left: 5em;
+  right: 5em;
+
+  background-color: var(--laranja-conpec);
+  height: 5px;
+  z-index: -1;
+}
+
+.listaServicos {
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.listaServicos > li {
+  position: relative;
+  background-color: var(--laranja-conpec);
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  width: 0;
+
+  flex: 1 1 0;
+
+  color: white;
+}
+
+.listaServicos hgroup {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.listaServicos h3 {
+  font-size: 1.4em;
+}
+
+.listaServicos ul {
+  margin-top: 1em;
+  padding-left: 1em;
+  list-style: disc;
+}
+
+.listaServicos ul > li {
+  margin-bottom: 0.5em;
+}
+
+.listaServicos a {
+  position: absolute;
+  bottom: -1.8em;
+  /* centralizar link */
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1130px) {
+  .sectPassos {
+    margin: 2rem;
+  }
+  .listaServicos {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .listaPassos {
+    display: none !important;
+  }
+
+  .listaServicos {
+    flex-direction: column;
+    font-size: 1rem;
+
+    margin: 1em 3em;
+    gap: 2.5em;
+  }
+
+  .listaServicos hgroup p {
+    display: none;
+  }
+
+  .listaServicos > li {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sectPassos h2 {
+    font-size: 2rem;
+  }
+
+  .listaServicos {
+    margin: 1em 0.5em;
+  }
+}
+
+.sectProcesso {
+  position: relative;
+  height: calc(50vw - 2rem);
+
+  margin: 3em;
+  padding: 2em;
+
+  border-radius: 5px;
+  background: linear-gradient(290deg, var(--laranja-1) 0%, var(--laranja-conpec) 30%, var(--laranja-conpec) 70%, var(--laranja-1) 100%);
+  box-shadow: 0px 4px 6px 0px #00000010;
+  color: white;
+}
+
+.sectProcesso h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  max-width: 50%;
+}
+
+.sectProcesso ol {
+  list-style-position: inside;
+  text-align: center;
+}
+
+.sectProcesso h3 {
+  display: inline;
+
+  text-transform: uppercase;
+  font-size: 1.3em;
+  line-height: 0.9;
+  margin-bottom: 0.3em;
+}
+
+.sectProcesso li p {
+  font-size: 0.9em;
+  text-wrap: balance;
+}
+
+.sectProcesso li {
+  position: absolute;
+  width: 23%;
+}
+
+.sectProcesso li::marker {
+  font-weight: 700;
+  text-decoration:
+}
+
+.sectProcesso li:nth-child(1) {
+  top: 40%;
+}
+
+.sectProcesso li:nth-child(2) {
+  top: 74%;
+  left: 36%;
+}
+
+.sectProcesso li:nth-child(3) {
+  top: 13%;
+  left: 49%;
+}
+
+.sectProcesso li:nth-child(4) {
+  top: 50%;
+  left: 68%;
+}
+
+.sectProcesso svg {
+  position: absolute;
+  width: 74%;
+  top: 5%;
+  left: 15%;
+
+  pointer-events: none; /* allow clicking behind svg */
+}
+
+@media screen and (max-width: 1100px) {
+  .sectProcesso {
+    font-size: 0.9rem;
+    height: 50vw;
+  }
+
+  .sectProcesso li {
+    width: 25%;
+  }
+
+  .sectProcesso svg {
+    top: 8%;
+    left: 16%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sectProcesso {
+    font-size: 0.8rem;
+    margin: 1.5em;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sectProcesso {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    height: fit-content;
+    font-size: 1rem;
+  }
+
+  .sectProcesso h2 {
+    max-width: 100%;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .sectProcesso svg {
+    display: none;
+  }
+
+  .sectProcesso ol {
+    margin-top: 2em;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectProcesso li {
+    position: static;
+    width: 200px;
+    flex-grow: 1;
+  }
+}
