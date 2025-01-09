@@ -1,0 +1,27 @@
+User-Agent: *
+Allow: /
+
+# Disallow AI scraping
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-Agent: CCBot
+Disallow: /
+
+User-Agent: ChatGPT-User
+Disallow: /
+
+User-Agent: ClaudeBot
+Disallow: /
+
+User-Agent: Claude-Web
+Disallow: /
+
+User-Agent: cohere-ai
+Disallow: /
+
+User-Agent: GPTBot
+Disallow: /
+
+Sitemap: https://conpec.com.br/sitemap.xml
