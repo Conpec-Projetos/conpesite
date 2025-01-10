@@ -19,6 +19,7 @@
   --branco-2: #E2E2E2;
   --branco-1: #FAFAFA;
   --branco-0: #FCFCFC;
+  --vermelho: #FF3F3F;
 
   font-size: calc(15px + 0.4vw); /* todos os tamanhos de fontes serão baseados nesse */
 }

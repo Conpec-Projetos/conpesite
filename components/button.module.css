@@ -73,3 +73,10 @@
     padding: 0.55em 1em;
   }
 }
+
+button.button:disabled {
+  cursor: auto;
+  background-color: var(--cinza-3);
+  background-image: none;
+  border: none;
+}

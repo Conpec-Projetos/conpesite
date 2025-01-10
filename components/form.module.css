@@ -87,6 +87,47 @@
   font-family: var(--font-lato); /* por padrão, isso é monospaced? */
 }
 
+.dialog[open] {
+  position: sticky;
+  top: 70px; /* header size */
+
+  width: 100vw;
+  z-index: 5;
+
+  padding: 0.5em 1em;
+  border: dotted 1px black;
+
+  background-color: var(--vermelho);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog.ok {
+  background-color: var(--verde);
+}
+
+.dialog.ok {
+  background-color: var(--laranja-conpec);
+}
+
+.dialog * {
+  color: white;
+}
+
+.dialog button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}
+
+.dialog svg {
+  height: 40px;
+}
+
 @media screen and (max-width: 830px) {
   .sectForm {
     flex-direction: column;
