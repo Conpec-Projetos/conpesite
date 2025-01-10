@@ -1,3 +1,5 @@
+import type { JSX } from 'react'
+
 import Image from 'next/image'
 import ImagemAlvorada from '@/assets/alvorada.jpg'
 
