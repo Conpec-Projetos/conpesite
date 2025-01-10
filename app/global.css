@@ -36,7 +36,7 @@ body {
   font-family: var(--font-lato);
   line-height: 1;
 
-  padding-top: 70px; /* account for header */
+  padding-top: 40px; /* partially account for header */
 }
 
 li {
