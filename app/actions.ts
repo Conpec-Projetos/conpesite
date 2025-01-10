@@ -17,16 +17,15 @@ export async function handleForm(_prevState: FormResponse, formData: FormData): 
 
 async function sendSlack(formData: FormData) {
   const ideia = formData.get('ideia')?.toString().replaceAll('\n', '\n> ') // use blockquote for textarea
-  const message = `
-  *_Nova mensagem do Conpesite_*
-  • *Nome*: ${formData.get('nome')}
-  • *Telefone*: ${formData.get('tel')}
-  • *Email*: ${formData.get('email')}
-  • *Como conheceu*: ${formData.get('referrer')}
-  • *Orçamento*: a partir de R$${formData.get('orçamento')},00
-  • *Ideia*:
-  > ${ideia}
-`
+  const message = `*_Nova mensagem do Conpesite_*
+• *Nome*: ${formData.get('nome')}
+• *Telefone*: ${formData.get('tel')}
+• *Email*: ${formData.get('email')}
+• *Como conheceu*: ${formData.get('referrer')}
+• *Orçamento*: a partir de R$${formData.get('orçamento')},00
+• *Ideia*:
+> ${ideia}`
+
   const response = await fetch('https://slack.com/api/chat.postMessage', {
     method: 'POST',
     body: JSON.stringify({
