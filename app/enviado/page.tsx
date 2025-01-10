@@ -1,11 +1,11 @@
-import Button from "@/components/Button";
+import Button from '@/components/Button'
 import style from './page.module.css'
 
 export default async function Enviado({ searchParams }: { searchParams: Promise<{ error?: string }> }) {
   const error = (await searchParams).error
-  const message = error === undefined ? "Obrigado por entrar em contato!" : "Erro ao enviar o formulário"
+  const message = error === undefined ? 'Obrigado por entrar em contato!' : 'Erro ao enviar o formulário'
 
-  if (error !== undefined) console.log("Erro ao enviar formulário:", error)
+  if (error !== undefined) console.log('Erro ao enviar formulário:', error)
 
   return (
     <main className={style.enviado}>
