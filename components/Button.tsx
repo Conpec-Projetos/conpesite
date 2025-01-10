@@ -15,6 +15,7 @@ interface LinkProps extends BaseProps {
 interface ButtonProps extends BaseProps {
   href?: never
   onClick?: MouseEventHandler<HTMLButtonElement>
+  type?: 'button' | 'submit' | 'reset'
 }
 
 type Props = LinkProps | ButtonProps
@@ -26,7 +27,7 @@ type Props = LinkProps | ButtonProps
 // em `<button>`. Não tem como mesclar as propriedades dos dois.
 export default function Button(props: Props) {
   if (props.href === undefined) {
-    return <button className={`${styles.button} ${styles[props.theme]}`} onClick={props.onClick}>{props.children}</button>
+    return <button className={`${styles.button} ${styles[props.theme]}`} type={props.type} onClick={props.onClick}>{props.children}</button>
   }
   return <Link className={`${styles.button} ${styles[props.theme]}`} href={props.href}>{props.children}</Link>
 }

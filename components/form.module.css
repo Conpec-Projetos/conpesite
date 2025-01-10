@@ -1,0 +1,114 @@
+.sectForm {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+
+  gap: 4em;
+  padding: 4em 2em;
+}
+
+.sectForm img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: -1;
+  filter: brightness(0.1);
+}
+
+.sectForm > div {
+  color: white;
+  margin-top: 2em;
+  max-width: 40vw;
+}
+
+.sectForm hgroup {
+  text-transform: uppercase;
+}
+
+.sectForm hgroup p {
+  letter-spacing: -0.5px;
+}
+
+.sectForm h2 {
+  font-size: 2.5em;
+  margin: 0.2em 0;
+}
+
+.sectForm form {
+  background-color: white;
+  padding: 1em;
+  border-radius: 15px;
+  min-width: 40vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.sectForm form > *, .sectForm label > * {
+  display: block;
+  width: 100%;
+}
+
+.sectForm form > div {
+  display: flex;
+  gap: 0.8em;
+}
+
+.sectForm form > div > *{
+  min-width: 30%;
+}
+
+.sectForm label {
+  font-weight: bold;
+}
+
+.sectForm label > * {
+  margin-top: 0.5em;
+}
+
+.sectForm form button {
+  padding: 0.5em 2.5em; /* deixar o botão mais largo e baixo */
+}
+
+.sectForm input, .sectForm textarea, .sectForm select {
+  border-radius: 5px;
+  border: solid 1px var(--cinza-2);
+  padding: 5px;
+  box-shadow: 0px 0px 4px 0px #00000025;
+  background-color: white;
+}
+
+.sectForm textarea {
+  font-family: var(--font-lato); /* por padrão, isso é monospaced? */
+}
+
+@media screen and (max-width: 830px) {
+  .sectForm {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .sectForm > div {
+    margin-top: 1em;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sectForm > div {
+    font-size: 0.85em;
+  }
+
+  .sectForm form > div {
+    flex-direction: column;
+  }
+
+  .sectForm form > div * {
+    width: 100% !important;
+  }
+}

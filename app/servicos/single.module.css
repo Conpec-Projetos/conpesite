@@ -90,6 +90,7 @@
 .sectDesc img {
   z-index: 3;
   margin-top: -5%;
+  margin-bottom: -2%;
   width: 55vw;
   height: auto;
   object-fit: cover;

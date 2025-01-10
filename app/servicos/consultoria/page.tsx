@@ -29,7 +29,7 @@ export default function Consultoria() {
           </p>
         </div>
       </section>
-      <Form />
+      <Form title="Interessou-se pela consultoria?" />
     </main>
   )
 }

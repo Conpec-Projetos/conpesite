@@ -29,7 +29,7 @@ export default function Proto() {
         </div>
         <Image src={resultImage} alt="Três smartphones mostram a prototipação de um aplicativo, feito pela Conpec." />
       </section>
-      <Form />
+      <Form title="Interessou-se pela prototipação?" />
     </main>
   )
 }
