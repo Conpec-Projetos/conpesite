@@ -38,7 +38,7 @@ async function handleForm(formData: FormData) {
   'use server'
 
   try {
-    sendSlack(formData)
+    await sendSlack(formData)
   }
   catch (e) {
     if (e instanceof Error) redirect('/enviado?error=' + e.message)
