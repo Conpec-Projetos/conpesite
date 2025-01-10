@@ -1,8 +1,18 @@
+import NextForm from 'next/form'
 import Image from 'next/image'
+import { redirect } from 'next/navigation'
 
 import style from './form.module.css'
 import bgImage from '@/assets/forms_bg.jpg'
 import Button from './Button'
+
+async function handleForm(formData: FormData) {
+  'use server'
+
+  // enviar forms. em caso de erro, redirecionar para `/enviado?error=erro`
+
+  redirect('/enviado')
+}
 
 export default function Form({ title }: { title: string }) {
   return (
@@ -15,7 +25,7 @@ export default function Form({ title }: { title: string }) {
         </hgroup>
         <p>É só preencher as informações e entraremos em contato em breve para dar início ao seu projeto.</p>
       </div>
-      <form autoComplete="on" method="post" action="/contato">
+      <NextForm action={handleForm}>
         <label>
           Nome
           <input type="text" name="nome" placeholder="Seu nome" required />
@@ -70,7 +80,7 @@ export default function Form({ title }: { title: string }) {
         </label>
 
         <Button theme="fill" type="submit">Enviar</Button>
-      </form>
+      </NextForm>
     </section>
   )
 }
