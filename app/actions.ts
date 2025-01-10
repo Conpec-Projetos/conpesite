@@ -5,6 +5,17 @@ type FormResponse = { error?: string, ok?: boolean }
 export async function handleForm(_prevState: FormResponse, formData: FormData): Promise<FormResponse> {
   'use server'
 
+  // se o usuário levou menos de três segundos para preencher o formulário, é um bot. ofuscando as
+  // mensagens de erro pra evitar que passem por cima tão fácil.
+  const timestamp = Number(formData.get("timestamp"))
+  if (isNaN(timestamp)) {
+    return {ok: false, error: "Erro B1: contate o admnistrador"} // usuário não incluiu timestamp
+  }
+
+  if (Date.now() - timestamp < 3000) {
+    return {ok: false, error: "Erro B2: contate o admnistrador"} // usuário foi muito rápido
+  }
+
   try {
     await sendSlack(formData)
   }

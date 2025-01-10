@@ -99,6 +99,8 @@ export default function Form({ title }: { title: string }) {
             />
           </label>
 
+          <input type="hidden" name="timestamp" value={Date.now()} />
+
           <Button theme="fill" type="submit" disabled={pending}>Enviar</Button>
         </NextForm>
       </section>
