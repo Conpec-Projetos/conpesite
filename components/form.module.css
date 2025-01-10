@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .sectForm {
+    padding: 4em 1em;
+  }
+
   .sectForm > div {
     font-size: 0.85em;
   }
