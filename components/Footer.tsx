@@ -1,11 +1,14 @@
+import Link from 'next/link'
+
 import { social, address } from '@/constants'
 import styles from './footer.module.css'
+
+import MailIcon from './svg/MailIcon'
+import PinIcon from './svg/PinIcon'
 import LogoConpec from './svg/LogoConpec'
 import LogoWhatsapp from './svg/LogoWhatsapp'
-import MailIcon from './svg/MailIcon'
+import LogoLinkedIn from './svg/LogoLinkedIn'
 import LogoInstagram from './svg/LogoInstagram'
-import PinIcon from './svg/PinIcon'
-import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -30,6 +33,12 @@ export default function Footer() {
             <Link target="_blank" href={`https://instagram.com/${social.instagram}`}>
               <LogoInstagram />
               {social.instagram}
+            </Link>
+          </li>
+          <li>
+            <Link target="_blank" href={`https://linkedin.com/${social.linkedin}`}>
+              <LogoLinkedIn />
+              {social.linkedin}
             </Link>
           </li>
         </menu>
