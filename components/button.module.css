@@ -12,7 +12,7 @@
   text-wrap: nowrap;
   text-align: center;
 
-  background-color: white;
+  background-color: var(--branco);
   border: none;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
   cursor: pointer;
@@ -22,7 +22,7 @@
 }
 
 .fill {
-  color: var(--branco-0);
+  color: var(--branco);
   background-image: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 50%);
   background-size: 200% 100%;
 }
@@ -38,7 +38,7 @@
 
 .tiny {
   padding: 10px;
-  color: var(--branco-0);
+  color: var(--branco);
   background-image: linear-gradient(to right, var(--laranja-1) 0%, var(--laranja-conpec) 33%, var(--laranja-2) 67%);
   background-size: 200% 100%;
   background-position: 100%;
@@ -55,11 +55,11 @@
 }
 
 .white {
-  color: var(--preto-0);
+  color: var(--preto);
 }
 
 .outline:hover, .white:hover {
-  color: var(--branco-0);
+  color: var(--branco);
   background-color: var(--laranja-1);
 }
 

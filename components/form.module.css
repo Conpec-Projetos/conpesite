@@ -20,7 +20,7 @@
 }
 
 .sectForm > div {
-  color: white;
+  color: var(--branco);
   margin-top: 2em;
   max-width: 40vw;
 }
@@ -39,7 +39,7 @@
 }
 
 .sectForm form {
-  background-color: white;
+  background-color: var(--branco);
   padding: 1em;
   border-radius: 15px;
   min-width: 40vw;
@@ -80,7 +80,7 @@
   border: solid 1px var(--cinza-2);
   padding: 5px;
   box-shadow: 0px 0px 4px 0px #00000025;
-  background-color: white;
+  background-color: var(--branco);
 }
 
 .sectForm textarea {
@@ -113,7 +113,7 @@
 }
 
 .dialog * {
-  color: white;
+  color: var(--branco);
 }
 
 .dialog button {

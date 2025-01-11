@@ -31,9 +31,10 @@ export default function Header() {
       </Link>
       <div>
         <nav>
+          {/* leitores de tela não precisam do botão pra ouvir o menu */}
           <input
             type="checkbox"
-            aria-controls="navDrawer"
+            aria-hidden="true"
             id="hamburguer"
             checked={drawer}
             onChange={() => setDrawer(!drawer)}

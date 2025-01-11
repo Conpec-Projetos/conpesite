@@ -1,7 +1,7 @@
 .footer {
   font-size: 14px;
   background-color: var(--laranja-conpec);
-  color: #FFF;
+  color: var(--branco);
   padding: 65px;
 
   display: grid;
@@ -49,13 +49,13 @@
   width: 100%;
   max-width: 160px;
   margin-top: 5px;
-  fill: var(--branco-0);
+  fill: var(--branco);
 }
 
 .footer small {
   grid-area: copy;
   display: block;
-  color: var(--branco-0)
+  color: var(--branco)
 }
 
 .footer address svg {

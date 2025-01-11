@@ -25,7 +25,6 @@
 .sectHero h1 {
   text-transform: uppercase;
   font-size: 4rem;
-  color: var(--preto-1);
 }
 
 .sectHero h1 span {
@@ -59,7 +58,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.02em;
-  color: var(--branco-1);
+  color: var(--branco);
 }
 
 .sectServicos hgroup h2 {
@@ -94,8 +93,8 @@
   padding: 70px 35px 50px;
 
   border-radius: 10px;
-  border: 2.5px solid var(--branco-2);
-  background-color: white;
+  border: 2.5px solid var(--cinza-1);
+  background-color: var(--branco);
 
   color: inherit;
   text-decoration: none;
@@ -132,8 +131,8 @@
   width: 85px;
   height: 85px;
 
-  background-color: white;
-  border: var(--branco-2) 2.5px solid;
+  background-color: var(--branco);
+  border: var(--cinza-1) 2.5px solid;
   border-radius: 100%;
 
   display: flex;
@@ -166,7 +165,6 @@
 }
 
 .sectSobre h2 {
-  color: var(--cinza-0);
   font-size: 6rem;
   text-transform: uppercase;
   margin-bottom: 0.3em;
@@ -177,7 +175,6 @@
 }
 
 .sectSobre p {
-  color: var(--cinza-1);
   font-size: 1.5rem;
 }
 
@@ -208,7 +205,6 @@
 }
 
 .sectDiferenciais hgroup p {
-  color: var(--preto-2);
   font-size: 1.5rem;
 }
 
@@ -233,12 +229,12 @@
   height: 100%;
   gap: 15px;
   border-radius: 5px;
-  border: 2px solid var(--branco-4);
+  border: 2px solid var(--branco);
   transition: all 0.2s linear;
 }
 
 .quatroCards > *:hover {
-  background: white;
+  background: var(--branco);
 }
 
 .quatroCards > *:hover * {
@@ -246,13 +242,13 @@
 }
 
 .quatroCards > * h3 {
-  color: var(--branco-1);
+  color: var(--branco);
   font-size: 1.75rem;
   font-weight: 600;
 }
 
 .quatroCards > * p {
-  color: var(--branco-3);
+  color: var(--branco);
   font-size: 1.5rem;
 }
 
@@ -279,14 +275,12 @@
 }
 
 .sectRelatos .cta p {
-  color: var(--cinza-6);
   font-weight: 500;
   letter-spacing: -0.48px;
   font-size: 0.9rem;
 }
 
 .sectRelatos .cta h2 {
-  color: var(--preto-1);
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: -1.92px;

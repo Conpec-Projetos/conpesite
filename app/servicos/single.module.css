@@ -2,7 +2,7 @@
 
 .sectHero {
   background-color: black;
-  color: white;
+  color: var(--branco);
   overflow: hidden;
   display: flex;
 
