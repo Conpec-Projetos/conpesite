@@ -5,6 +5,13 @@ import ImagemAlvorada from '@/assets/alvorada.jpg'
 
 import style from './page.module.css'
 import { mvv, coorde, timeline } from '@/constants'
+import { getWebMetadata } from '@/app/metadata'
+
+export const metadata = getWebMetadata({
+  title: 'Sobre nós',
+  description: 'Entenda mais sobre a Conpec, a empresa júnior de computação da Unicamp.',
+  url: '/sobre/',
+})
 
 function renderValor(valor: typeof mvv.valores[number], id: number): JSX.Element {
   return (

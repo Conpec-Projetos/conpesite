@@ -9,7 +9,8 @@ interface Props extends SVGProps<SVGSVGElement> {
 
 export default function ConpecIcon({ hasMask, ...props }: Props) {
   const maskSvg = (
-    <> <mask id="mask" style={{ maskType: 'alpha' }}><use href="#iconeConpec" /></mask>
+    <>
+      <mask id="mask" style={{ maskType: 'alpha' }}><use href="#iconeConpec" /></mask>
       <g mask="url(#mask)" filter="url(#gaussian)">
         <ellipse cx="377.952" cy="85.5305" rx="65.8959" ry="105.18" transform="rotate(-37.7459 377.952 85.5305)" fill="#FFC9A4" />
         <circle cx="76.866" cy="156.753" r="94.1973" fill="#FFC9A4" />

@@ -9,6 +9,13 @@ import ConsultoriaIcon from '@/components/svg/ConsultoriaIcon'
 import ProtoIcon from '@/components/svg/ProtoIcon'
 import DevIcon from '@/components/svg/DevIcon'
 import Form from '@/components/Form'
+import { getWebMetadata } from '@/app/metadata'
+
+export const metadata = getWebMetadata({
+  title: 'Serviços',
+  description: 'Descubra mais sobre os nossos serviços e as formas em que podemos mudar o seu negócio.',
+  url: '/servicos/',
+})
 
 export default function Servicos() {
   return (

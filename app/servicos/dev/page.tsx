@@ -4,8 +4,14 @@ import Button from '@/components/Button'
 import Image from 'next/image'
 import stockImage from '@/assets/dev_stock.png'
 import resultImage from '@/assets/dev_servico.jpg'
+import { getWebMetadata } from '@/app/metadata'
 
-export default function Consultoria() {
+export const metadata = getWebMetadata({
+  title: 'Desenvolvimento',
+  url: '/servicos/dev/',
+})
+
+export default function Desenvolvimento() {
   return (
     <main>
       <section style={{ backgroundColor: '#050501' }} className={style.sectHero}>

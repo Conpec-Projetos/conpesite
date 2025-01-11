@@ -4,6 +4,7 @@ import { Poppins, Lato, DM_Serif_Text } from 'next/font/google'
 import './global.css'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { defaultMetadata } from './metadata'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,6 +26,8 @@ const dm_serif = DM_Serif_Text({
   display: 'swap',
   weight: ['400'],
 })
+
+export const metadata = defaultMetadata
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

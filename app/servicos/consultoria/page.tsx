@@ -4,6 +4,12 @@ import Button from '@/components/Button'
 import Image from 'next/image'
 import stockImage from '@/assets/consultoria_stock.png'
 import resultImage from '@/assets/consultoria_servico.png'
+import { getWebMetadata } from '@/app/metadata'
+
+export const metadata = getWebMetadata({
+  title: 'Consultoria técnica',
+  url: '/servicos/consultoria',
+})
 
 export default function Consultoria() {
   return (

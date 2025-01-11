@@ -1,5 +1,11 @@
+import { getWebMetadata } from '@/app/metadata'
+
 import Button from '@/components/Button'
 import styles from './not-found.module.css'
+
+export const metadata = getWebMetadata({
+  title: '404 — Página não encontrada',
+})
 
 export default function NotFound() {
   return (
