@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { Poppins, Lato, DM_Serif_Text } from 'next/font/google'
 
 import './global.css'
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

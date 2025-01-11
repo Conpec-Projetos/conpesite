@@ -7,13 +7,13 @@ export async function handleForm(_prevState: FormResponse, formData: FormData): 
 
   // se o usuário levou menos de três segundos para preencher o formulário, é um bot. ofuscando as
   // mensagens de erro pra evitar que passem por cima tão fácil.
-  const timestamp = Number(formData.get("timestamp"))
+  const timestamp = Number(formData.get('timestamp'))
   if (isNaN(timestamp)) {
-    return {ok: false, error: "Erro B1: contate o admnistrador"} // usuário não incluiu timestamp
+    return { ok: false, error: 'Erro B1: contate o admnistrador' } // usuário não incluiu timestamp
   }
 
   if (Date.now() - timestamp < 3000) {
-    return {ok: false, error: "Erro B2: contate o admnistrador"} // usuário foi muito rápido
+    return { ok: false, error: 'Erro B2: contate o admnistrador' } // usuário foi muito rápido
   }
 
   try {
