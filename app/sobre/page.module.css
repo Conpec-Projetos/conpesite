@@ -429,9 +429,21 @@
   .sectTimeline li {
     font-size: 0.9rem;
   }
+}
 
-  .sectTimeline small {
-    font-size: 0.7em;
+@media screen and (max-width: 450px) {
+  .sectTimeline li {
+    width: 100%;
+    text-align: left !important;
+    font-size: 1rem;
+  }
+
+  .sectTimeline li:not(:first-child) {
+    margin-top: 1em;
+  }
+
+  .timeline {
+    display: none;
   }
 }
 
