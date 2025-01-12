@@ -360,7 +360,7 @@
 
 .timeline {
   position: absolute;
-  top: 3.2rem; /* tamanho do primeiro hgroup */
+  top: 3.4rem; /* tamanho do primeiro hgroup */
   bottom: -2rem;
   left: calc(50% - 2px);
 
