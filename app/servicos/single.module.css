@@ -1,6 +1,7 @@
 /* CSS das páginas específicas para cada serviço */
 
 .sectHero {
+  margin-top: 70px;
   background-color: black;
   color: var(--branco);
   overflow: hidden;

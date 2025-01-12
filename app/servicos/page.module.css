@@ -49,6 +49,7 @@
 
 @media screen and (max-width: 600px) {
   .sectHero {
+    margin-top: 70px;
     padding: 4rem 2rem;
   }
 

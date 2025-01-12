@@ -28,8 +28,6 @@ body {
   background-color: var(--branco);
   font-family: var(--font-lato);
   line-height: 1;
-
-  padding-top: 40px; /* partially account for header */
 }
 
 li {

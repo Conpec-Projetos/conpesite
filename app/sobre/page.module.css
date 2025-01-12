@@ -6,7 +6,7 @@
   justify-content: space-between;
   gap: 50px;
 
-  margin-bottom: 50px;
+  margin: 4em 0;
 }
 
 .sectHero > div {
@@ -73,6 +73,7 @@
 @media screen and (max-width: 400px) {
   .sectHero {
     font-size: 0.7rem;
+    margin-top: 5em;
   }
 }
 
