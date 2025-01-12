@@ -8,5 +8,5 @@ export const metadata = getWebMetadata({
 })
 
 export default function Contato() {
-  return <main><Form title="Gostou dos nossos serviços?" /></main>
+  return <main><Form title="Gostou dos nossos serviços?" priority /></main>
 }

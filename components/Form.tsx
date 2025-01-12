@@ -10,7 +10,7 @@ import bgImage from '@/assets/forms_bg.jpg'
 import Button from './Button'
 import CloseMenu from './svg/CloseMenu'
 
-export default function Form({ title }: { title: string }) {
+export default function Form({ title, priority }: { title: string, priority?: boolean }) {
   const [state, formAction, pending] = useActionState(handleForm, {})
 
   const dialogRef = useRef<HTMLDialogElement>(null)
@@ -37,7 +37,7 @@ export default function Form({ title }: { title: string }) {
     <>
       {formResponse}
       <section className={style.sectForm} id="form">
-        <Image src={bgImage} alt="" />
+        <Image src={bgImage} alt="" priority={priority} sizes="100vw" />
         <div>
           <hgroup>
             <p>Entre em contato conosco</p>

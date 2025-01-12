@@ -15,7 +15,13 @@ export default function Proto() {
   return (
     <main>
       <section className={style.sectHero}>
-        <Image src={stockImage} alt="" priority />
+        <Image
+          src={stockImage}
+          alt=""
+          priority
+          placeholder="blur"
+          sizes="60vw"
+        />
         <div>
           <h1>Prototipação</h1>
           <p>Faça a sua ideia ganhar forma!</p>
@@ -33,7 +39,11 @@ export default function Proto() {
           </p>
           <Button href="/portfolio" theme="outline">Confira mais cases de sucesso</Button>
         </div>
-        <Image src={resultImage} alt="Três smartphones mostram a prototipação de um aplicativo, feito pela Conpec." />
+        <Image
+          src={resultImage}
+          alt="Três smartphones mostram a prototipação de um aplicativo, feito pela Conpec."
+          sizes="55vw"
+        />
       </section>
       <Form title="Interessou-se pela prototipação?" />
     </main>

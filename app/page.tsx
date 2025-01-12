@@ -108,6 +108,7 @@ export default function Home() {
         <Image
           src={imagemEpej}
           alt="Membros da Conpec estendendo a bandeira da empresa no evento EPEJ."
+          sizes="(max-width: 500px) 100vw, (max-width: 900px) 40vw, 45vw"
         />
         <div>
           <h2>O que é a <span>Conpec</span>?</h2>

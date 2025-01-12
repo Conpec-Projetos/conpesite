@@ -16,7 +16,11 @@ export const metadata = getWebMetadata({
 function renderValor(valor: typeof mvv.valores[number], id: number): JSX.Element {
   return (
     <li key={id}>
-      <Image src={valor.imagem} alt={valor.imagemAlt} />
+      <Image
+        src={valor.imagem}
+        alt={valor.imagemAlt}
+        sizes="(max-width: 490px) 93vw, (max-width: 900px) 50vw, 30vw"
+      />
       <div>
         <h3>{valor.titulo}</h3>
         <p>{valor.descricao}</p>
@@ -28,7 +32,11 @@ function renderValor(valor: typeof mvv.valores[number], id: number): JSX.Element
 function renderCoorde(membro: typeof coorde[number], id: number): JSX.Element {
   return (
     <li key={id}>
-      <Image src={membro.imagem} alt="" />
+      <Image
+        src={membro.imagem}
+        alt=""
+        sizes="20vw"
+      />
       <div>
         <h3>{membro.nome}</h3>
         <p>{membro.cargo}</p>
@@ -63,7 +71,13 @@ export default function Sobre() {
             desde 1991 entregando os melhores projetos para nossos clientes.
           </p>
         </div>
-        <Image src={ImagemAlvorada} alt="Membros da Conpec posam para foto no evento regional Alvorada." priority />
+        <Image
+          src={ImagemAlvorada}
+          alt="Membros da Conpec posam para foto no evento regional Alvorada."
+          priority
+          placeholder="blur"
+          sizes="(max-width: 650px) 100vw, 45vw"
+        />
       </section>
       <section className={style.sectMVV}>
         <div>

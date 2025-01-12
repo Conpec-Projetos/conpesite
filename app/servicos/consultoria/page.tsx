@@ -20,10 +20,20 @@ export default function Consultoria() {
           <p>Descubra as melhores tecnologias para o seu negócio!</p>
           <Button href="#form" theme="fill">Entre em contato</Button>
         </div>
-        <Image src={stockImage} alt="Homem visualiza um gráfico na tela de um computador." priority />
+        <Image
+          src={stockImage}
+          alt="Homem visualiza um gráfico na tela de um computador."
+          sizes="60vw"
+          placeholder="blur"
+          priority
+        />
       </section>
       <section className={style.sectDesc}>
-        <Image src={resultImage} alt="Dois homens, usando a camisa da Conpec, discutem em frente à um computador." />
+        <Image
+          src={resultImage}
+          alt="Dois homens, usando a camisa da Conpec, discutem em frente à um computador."
+          sizes="55vw"
+        />
         <div>
           <p>
             Com a <strong>consultoria técnica Conpec</strong>, você terá um acompanhamento detalhado dos seus processos

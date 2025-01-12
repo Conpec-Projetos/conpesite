@@ -20,10 +20,20 @@ export default function Desenvolvimento() {
           <p>Veja sua ideia se tornar realidade!</p>
           <Button href="#form" theme="fill">Entre em contato</Button>
         </div>
-        <Image src={stockImage} alt="Tela de um computador mostra linhas de código." priority />
+        <Image
+          src={stockImage}
+          alt="Tela de um computador mostra linhas de código."
+          sizes="60vw"
+          placeholder="blur"
+          priority
+        />
       </section>
       <section className={style.sectDesc}>
-        <Image src={resultImage} alt="Dois homens, usando a camisa da Conpec, discutem em frente à um computador." />
+        <Image
+          src={resultImage}
+          alt="Dois homens, usando a camisa da Conpec, discutem em frente à um computador."
+          sizes="55vw"
+        />
         <div>
           <p>
             Com o <strong>desenvolvimento Conpec</strong>, a sua ideia vai finalmente se tornar um produto real!

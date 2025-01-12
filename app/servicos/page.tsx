@@ -22,7 +22,13 @@ export default function Servicos() {
     <main>
       <section className={style.sectHero}>
         <div className={style.blackBg}></div>
-        <Image src={keyboardImg} alt="" priority />
+        <Image
+          src={keyboardImg}
+          alt=""
+          sizes="100vw"
+          priority
+          placeholder="blur"
+        />
         <h1>Serviços em TI e Consultoria</h1>
         <p>
           Oferecemos consultoria técnica, prototipação e desenvolvimento personalizado para
