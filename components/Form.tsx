@@ -23,10 +23,10 @@ export default function Form({ title, priority }: { title: string, priority?: bo
     <dialog
       ref={dialogRef}
       open={state.ok !== undefined}
-      className={`${style.dialog} ${state.ok === true && style.ok}`}
+      className={`${style.dialog} ${state.ok === true ? style.ok : ''}`}
       aria-live="assertive"
     >
-      <p>{state?.error || 'Formulário enviado! Iremos entrar em contato em breve.'}</p>
+      <p>{state.error ?? 'Formulário enviado! Iremos entrar em contato em breve.'}</p>
       <form method="dialog">
         <button><CloseMenu /></button>
       </form>

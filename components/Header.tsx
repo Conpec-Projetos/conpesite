@@ -37,9 +37,9 @@ export default function Header() {
             aria-hidden="true"
             id="hamburguer"
             checked={drawer}
-            onChange={() => setDrawer(!drawer)}
+            onChange={() => { setDrawer(!drawer) }}
           />
-          <div id="navDrawer" className={style.navDrawer} onClick={() => setDrawer(false)}>
+          <div id="navDrawer" className={style.navDrawer} onClick={() => { setDrawer(false) }}>
             <NavLink href="/">Início</NavLink>
             <NavLink href="/sobre/">Sobre nós</NavLink>
             <NavLink href="/servicos/">Serviços</NavLink>
