@@ -33,7 +33,7 @@ function parseNumber(val: FormDataEntryValue | null): number {
 }
 
 function parseUnion<T extends string>(union: readonly T[], val: FormDataEntryValue | null): T {
-  const isOk = (str: string): str is T => union.some((v) => v === str)
+  const isOk = (str: string): str is T => union.some(v => v === str)
 
   const str = parseStr(val)
 
@@ -70,7 +70,7 @@ export async function handleForm(_prevState: FormResponse, formData: FormData): 
     await sendSlack(form)
   }
   catch (e) {
-    if (e instanceof Error) return { error: "Erro: " + e.message, ok: false }
+    if (e instanceof Error) return { error: 'Erro: ' + e.message, ok: false }
   }
 
   return { ok: true }
