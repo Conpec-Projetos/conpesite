@@ -1,0 +1,176 @@
+.clientLogos {
+    transform: scale(1);
+    margin: 10px;
+}
+
+
+.containerDiv {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.mediaDiv {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.mediaDivReverse {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.imageDiv {
+    /* justify-content: flex-end; */
+    align-items: right;
+    width: 50%;
+    height: 50%;
+}
+
+.halfcutImage {
+    margin-left: 0;
+}
+
+.textDiv {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    
+}
+
+
+.right {
+    flex: 1;
+    margin-right: 0;  
+}
+
+.left {
+    flex: 0;
+}
+
+
+
+/* botar titles, text e subtitles dentro de divs e aí fazer o flex com eles */
+.titles {
+    /* flex: 1; */
+    font-size: clamp(2.9rem, 5.0vw, 5.63rem);
+    font-weight: bold;
+    margin: 0;
+    height: auto;
+    white-space: nowrap;
+}
+
+
+.text {
+    /* flex: 2; */
+    font-weight: 400;
+    padding: 0% 1% 0% 0%;
+    margin: 0;
+    text-wrap: true;
+    text-align: justify;
+    max-width: 512px;
+    color: #676767;
+
+}
+
+/* .text subclass */
+.head {
+    font-size: clamp(1.0rem, 1.45vw, 2.0rem);
+
+}
+
+/* .text subclass */
+.body {
+    font-size: clamp(0.8rem, 1.7vw, 1.8rem);
+    color: #1A1A1A;
+
+}
+
+.cropMockup {
+    overflow: hidden;
+    margin: '3% 12%';
+}
+
+@media screen and (max-width: 1000px) {
+    .mediaDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mediaDivReverse {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .textDiv {
+        align-items: center;
+    }
+
+}
+
+.subtitle {
+    /* flex: 0; */
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #4B4B4B;
+}
+
+.rowContainerDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.categoryDiv {
+    margin: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 9px;
+    padding: 5px;
+    font-size: clamp(0.8rem, 1.1vw, 1.8rem);
+}
+
+.banner {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    
+}
+  
+.logoContainer {
+    display: flex;
+    animation: 15s slide infinite linear;
+    height: 100px;
+    align-items: center;
+}
+  
+.logo {
+    /* height: 50px; */
+    width: auto;
+    margin: 10px 20px;
+    height: 40px;
+
+}
+  
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+  
