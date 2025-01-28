@@ -1,6 +1,6 @@
 import styles from './portfolio.module.css'
 import Image from 'next/image'
-import LogosClientes from './svg/Logos'
+import logosClientes from './assets/Logos.png'
 
 
 import logoImunolab from './assets/Imunolab.png'
@@ -20,10 +20,17 @@ import pngPeG from './assets/P&G.png'
 import pngSocialmentes from './assets/Social_Mentes.png'
 import pngTaikon from './assets/Taikon.png'
 import mockupsImunolab from './assets/MockupsImunolab.png'
-import MockupsCW from './svg/CookWorkingMockups'
-import MockupsLympho from './svg/LymphodermaMockups'
+import mockupsCW from './assets/MockupCookWorking.png'
+import mockupsLympho from './assets/mockupsLympho.png'
 import mockupsTaikon from './assets/MockupsTaikon.png'
 
+import { getWebMetadata } from '@/app/metadata'
+
+export const metadata = getWebMetadata({
+  title: 'Portfolio',
+  description: 'Descubra os nossos cases de sucesso',
+  url: '/portfolio/',
+})
 
 
 export default function Portfolio() {
@@ -44,10 +51,15 @@ export default function Portfolio() {
   return (
     <>
       {/* Header Nossos Clientes */}
-      <div className={styles.mediaDiv}>
-        <div className={styles.imageDiv}>
+      <div className={styles.mediaDivReverse}>
+        <div className={styles.imageDiv} style={{ margin: '10px' }}>
           {/* FAZER A IMAGEM IR PRA CIMA QUANDO MIN-WIDTH */}
-          <LogosClientes className={styles.clientLogos}/>
+          <Image
+          src={logosClientes}
+          alt=''
+          sizes='55vw'
+          layout='responsive'
+          />
         </div>
           
           <div className={`${styles.textDiv} ${styles.right}`}>
@@ -76,7 +88,7 @@ export default function Portfolio() {
               <Image
               src={logoImunolab}
               alt='Logo da empresa Imunolab'
-              width={55}
+              sizes='20vw'
               ></Image>  
             </div>
             
@@ -96,18 +108,23 @@ export default function Portfolio() {
             src={mockupsImunolab}
             alt='Imagem mockupsImunolab em um Iphone das telas do aplicativo'
             layout='responsive'
-            width={438}
-            height={349}
+            sizes='55vw'
+            style={{margin: '3% 12%', overflow:'hidden'}}
           
           ></Image>
         </div>
       </div>
 
       {/* CookWorking */}
-      <div className={styles.mediaDiv}>
-        <div className={styles.imageDiv}>
+      <div className={styles.mediaDivReverse}>
+        <div className={styles.imageDiv} style={{margin: "3%"}}>
           {/* FAZER A IMAGEM IR PRA CIMA QUANDO MIN-WIDTH */}
-          <MockupsCW/>
+          <Image
+          src={mockupsCW}
+          sizes='55vw'
+          alt=''
+          layout='responsive'
+          />
         </div>
           
         <div className={styles.textDiv}>
@@ -120,7 +137,14 @@ export default function Portfolio() {
             </div>  
           </div>
           <div className={styles.rowContainerDiv}>
-            <LogoCookworking/>
+            <div className={styles.test}>
+              <Image
+              src={pngCookworking}
+              alt='Logo da empresa Imunolab'
+              sizes='55vw'
+              layout='responsive'
+              ></Image>  
+            </div>
           </div>
             
           <p className={`${styles.text} ${styles.body}`}>Para o CookWorking,
@@ -156,10 +180,11 @@ export default function Portfolio() {
           {/* FAZER A IMAGEM IR PRA CIMA QUANDO MIN-WIDTH */}
           <Image
             src={mockupsTaikon} 
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="55vw"
             alt='Imagem com os logos dos clientes passados da Conpec'
             layout='responsive'
             >
+            
             
           </Image>
         </div>
@@ -167,10 +192,15 @@ export default function Portfolio() {
 
 
       {/* Lymphoderma */}
-    <div className={styles.mediaDiv}>
+    <div className={styles.mediaDivReverse}>
       <div className={styles.imageDiv}>
           {/* FAZER A IMAGEM IR PRA CIMA QUANDO MIN-WIDTH */}
-          <MockupsLympho/>
+          <Image
+          src={mockupsLympho}
+          alt=''
+          sizes='55vw'
+          layout='responsive'
+          />
       </div>
       <div className={styles.textDiv}>
           <div className={styles.rowContainerDiv}>
